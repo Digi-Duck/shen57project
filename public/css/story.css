@@ -93,14 +93,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 50px;
 }
-
-@media (max-width: 468px) {
-    #story  {
-        padding-top: 30px;
-    }
-  }
 
 .container {
   width: 100%;

@@ -13,8 +13,9 @@
         <div class="title">
             主要消息 / 管理消息
         </div>
-        
+
         <!-- 套版用start -->
+
         <section class="main-news-list">
             <div class="main-news-box">
                 <img src="{{asset('img/backstage/banner.jpg')}}" alt="">
@@ -53,8 +54,8 @@
                 <button class="deleteBtn">刪除</button>
             </div>
         </section>
-        <!-- 套版用end -->
 
+        <!-- 套版用end -->
 
     </main>
 @endsection

@@ -20,10 +20,11 @@
             主要消息 / 新增消息
         </div>
         <section class="add-input-box">
-            <form action="" method="GET">
-                <!-- <div class="add-title">
-                        <label for="date">時間</label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )">
-                    </div> -->
+            <form action="/admin/addmainnews" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="add-title">
+                    <label for="date">時間</label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )">
+                </div>
                 <div class="add-title">
                     <label for="title">標題</label><input type="text" name="title" id="title" placeholder="請輸入標題">
                 </div>
@@ -33,21 +34,20 @@
                 </div>
                 <div class="add-content">
                     <label for="index-content">簡要內容</label>
-                    <div id="summernote" name="index-content" id="index-content">
-                        <p>請輸入簡要內容 ( 此區塊內容會出現在首頁，建議內容不超過5行 )</p>
-                    </div>
+                    <textarea id="summernote" name="content1" id="index-content" placeholder="請輸入簡要內容 ( 此區塊內容會出現在首頁，建議內容不超過5行 )">
+                    <p>請輸入簡要內容 ( 此區塊內容會出現在首頁，建議內容不超過5行 )</p>
+                    </textarea>
                     <script>
                         $(document).ready(function() {
                             $('#summernote').summernote({
                                 height: 100,
                             });
-
                         });
                     </script>
-                    <label for="main-news-content">詳細內容</label>
-                    <div id="summernote2" name="main-news-content" id="main-news-content">
-                        <p>請輸入詳細內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )</p>
-                    </div>
+                    <label for="news-content">詳細內容</label>
+                    <textarea id="summernote2" name="content2" id="news-content" placeholder="請輸入詳細內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )">
+                    <p>請輸入詳細內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )</p>
+                    </textarea>
                     <script>
                         $(document).ready(function() {
                             $('#summernote2').summernote({

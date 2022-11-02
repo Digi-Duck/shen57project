@@ -16,7 +16,7 @@
             <div class="title-area">
                 <img src="{{ asset('img/news/calligraphy-news.svg') }}" alt="">
                 <div class="title-area-infobox">
-                    <h5>​最新消息 · 活動訊息 · 優惠專案</h5>
+                    <h5>最新消息 · 活動訊息 · 優惠專案</h5>
                 </div>
             </div>
 

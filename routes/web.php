@@ -42,3 +42,8 @@ Route::get('/admin/main-news-list',[BackStageController::class,'mainList']);
 Route::get('/admin/add-main-news',[BackStageController::class,'mainAdd']);
 Route::get('/admin/news-list',[BackStageController::class,'newsList']);
 Route::get('/admin/add-news',[BackStageController::class,'newsAdd']);
+
+Route::post('/admin/addnews',[BackStageController::class,'addnews']);
+Route::post('/admin/addmainnews',[BackStageController::class,'addmainnews']);
+
+

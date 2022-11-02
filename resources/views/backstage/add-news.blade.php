@@ -20,10 +20,11 @@
             一般消息 / 新增消息
         </div>
         <section class="add-input-box">
-            <form action="" method="GET">
-                <!-- <div class="add-title">
-                        <label for="date">時間</label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )">
-                    </div> -->
+            <form action="/admin/addnews" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="add-title">
+                    <label for="date">時間</label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )">
+                </div>
                 <div class="add-title">
                     <label for="title">標題</label><input type="text" name="title" id="title" placeholder="請輸入標題">
                 </div>
@@ -33,9 +34,9 @@
                 </div>
                 <div class="add-content">
                     <label for="main-news-content">內容</label>
-                    <div id="summernote2" name="main-news-content" id="main-news-content">
-                        <p>請輸入內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )</p>
-                    </div>
+                    <textarea id="summernote2" name="content" id="news-content"
+                    placeholder="請輸入內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )">
+                    </textarea>
                     <script>
                         $(document).ready(function() {
                             $('#summernote2').summernote({

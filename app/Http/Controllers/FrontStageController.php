@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Mainnews;
+use App\Models\News;
 
 class FrontStageController extends Controller
 {
