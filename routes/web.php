@@ -43,7 +43,20 @@ Route::get('/admin/add-main-news',[BackStageController::class,'mainAdd']);
 Route::get('/admin/news-list',[BackStageController::class,'newsList']);
 Route::get('/admin/add-news',[BackStageController::class,'newsAdd']);
 
+//新增消息
 Route::post('/admin/addnews',[BackStageController::class,'addnews']);
 Route::post('/admin/addmainnews',[BackStageController::class,'addmainnews']);
+
+//編輯一般消息
+Route::get('/admin/news-edit/{id}',[BackStageController::class,'newsedit']);
+Route::POST('/admin/news-edit-upload/{id}',[BackStageController::class,'newseditchecked']);
+
+//編輯主要消息
+Route::get('/admin/main-edit/{id}',[BackStageController::class,'mainedit']);
+Route::POST('/admin/main-edit-upload/{id}',[BackStageController::class,'maineditchecked']);
+
+//刪除消息
+Route::get('/admin/news-del/{id}',[BackStageController::class,'newsDel']);
+Route::get('/admin/main-del/{id}',[BackStageController::class,'mainDel']);
 
 

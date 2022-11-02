@@ -80,113 +80,104 @@ textarea {
   --ph: calc(100vw / 468);
 }
 
-.news-list {
+.add-news {
   padding: 50px 40px;
   width: 100%;
   height: 100%;
   min-height: 100vh;
+  flex: 1;
   background: var(--darkModeWhite, #ffffff);
 }
-.news-list .title {
+.add-news .title {
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 30px;
   color: var(--darkModeDarkBrown, #767067);
 }
-.news-list .main-news-list {
+.add-news .add-input-box {
   width: 800px;
   height: auto;
-  padding: 15px;
+  padding: 30px;
   border: 1px solid var(--darkModeBlack, #26292c);
   color: var(--darkModeBlack, #26292c);
-  margin-bottom: 30px;
 }
-.news-list .main-news-list .main-news-box {
+.add-news .add-input-box .add-title {
   width: 100%;
-  padding: 10px 0 20px;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  border-bottom: 1px solid var(--darkModeGray, #767676);
-}
-.news-list .main-news-list .main-news-box img {
-  width: 200px;
-  height: 200px;
-}
-.news-list .main-news-list .main-news-box .info-box {
-  margin-left: 20px;
-  flex: 1;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  flex-direction: column;
-}
-.news-list .main-news-list .main-news-box .info-box .title {
-  width: 100%;
-  margin-bottom: 10px;
-  color: var(--darkModeBlack, #26292c);
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-.news-list .main-news-list .main-news-box .info-box .title h5 {
+  margin-bottom: 20px;
   font-size: 17px;
-  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.news-list .main-news-list .main-news-box .info-box .title span {
+.add-news .add-input-box .add-title span {
   font-size: 13px;
+  font-weight: 400;
 }
-.news-list .main-news-list .main-news-box .info-box .content {
+.add-news .add-input-box .add-title label {
+  margin: 0;
+}
+.add-news .add-input-box .add-title input {
+  margin-left: 10px;
+  flex: 1;
+  font-size: 15px;
+  text-indent: 5px;
+}
+.add-news .add-input-box .add-content {
+  color: var(--darkModeBlack, #26292c);
+  font-size: 17px;
+}
+.add-news .add-input-box .add-content p {
+  margin-bottom: 0px;
   font-size: 15px;
   color: var(--darkModeGray, #767676);
 }
-
-.news-list .main-news-list .main-news-box .info-box .content .content-title{
-    margin: 10px 0 5px;
-    color: var(--darkModeBlack, #26292c);
-    font-size: 15px;
-    font-weight: 700;
-  }
-
-.news-list .main-news-list .btnArea {
+.add-news .add-input-box .add-content #summernote2 {
+  margin-bottom: 0;
+}
+.add-news .btnArea {
   width: 100%;
-  padding: 10px 0 0;
   display: flex;
   justify-content: end;
   align-items: start;
 }
-.news-list .main-news-list .btnArea a {
-  padding: 3px 10px;
-  background: var(--darkModeDarkBrown, #767067);
-  color: var(--darkModeWhite, #ffffff);
-  border: none;
-  font-size: 15px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.news-list .main-news-list .btnArea a:hover {
-  background: var(--darkModeBlack, #26292c);
-}
-.news-list .main-news-list .btnArea .deleteBtn {
-    padding: 3px 10px;
-    border: none;
-    font-size: 15px;
-    color: var(--darkModeWhite, #ffffff);
-  background: rgb(168, 45, 45);
-}
-.news-list .main-news-list .btnArea .deleteBtn:hover {
-  background: rgb(219, 72, 72);
-}
-
-.cancelBtn{
+.add-news .btnArea button {
     padding: 3px 10px;
     background: var(--darkModeDarkBrown, #767067);
     color: var(--darkModeWhite, #ffffff);
     border: none;
     font-size: 15px;
     cursor: pointer;
+    margin-right: 10px;
+}
+.add-news .btnArea button:hover {
+  background: var(--darkModeBlack, #26292c);
+}/*# sourceMappingURL=add-main-news.css.map */
+
+.btnArea a {
+    padding: 3px 10px;
+    background: var(--darkModeDarkBrown, #767067);
+    color: var(--darkModeWhite, #ffffff);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+.btnArea a:hover {
+    background: var(--darkModeBlack, #26292c);
+  }
+
+
+.edit-img-box{
+
+    color: var(--darkModeBlack, #26292c);
+    display: flex;
+    margin-bottom: 20px;
+}
+.edit-img-box span{
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 700;
 }
 
-.modal{
-    --bs-modal-border-radius: 0;
+.edit-img-box img{
+    width: 250px;
 }

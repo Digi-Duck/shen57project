@@ -148,21 +148,39 @@ textarea {
   justify-content: end;
   align-items: start;
 }
-.news-list .main-news-list .btnArea button {
+.news-list .main-news-list .btnArea a {
   padding: 3px 10px;
   background: var(--darkModeDarkBrown, #767067);
   color: var(--darkModeWhite, #ffffff);
   border: none;
   font-size: 15px;
-  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
 }
-.news-list .main-news-list .btnArea button:hover {
+.news-list .main-news-list .btnArea a:hover {
   background: var(--darkModeBlack, #26292c);
 }
 .news-list .main-news-list .btnArea .deleteBtn {
+    padding: 3px 10px;
+    border: none;
+    font-size: 15px;
+    color: var(--darkModeWhite, #ffffff);
   background: rgb(168, 45, 45);
 }
 .news-list .main-news-list .btnArea .deleteBtn:hover {
   background: rgb(219, 72, 72);
-}/*# sourceMappingURL=news-list.css.map */
+}
+
+.cancelBtn{
+    padding: 3px 10px;
+    background: var(--darkModeDarkBrown, #767067);
+    color: var(--darkModeWhite, #ffffff);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.modal{
+    --bs-modal-border-radius: 0;
+}
+/*# sourceMappingURL=news-list.css.map */

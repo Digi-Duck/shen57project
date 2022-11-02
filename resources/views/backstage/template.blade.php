@@ -49,6 +49,7 @@
         </ul>
     </nav>
     @yield('main')
+    @yield('js')
 </body>
 
 </html>

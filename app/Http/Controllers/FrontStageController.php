@@ -16,7 +16,6 @@ class FrontStageController extends Controller
         return view('frontstage.news');
     }
 
-
     public function location(){
         return view('frontstage.location');
     }
