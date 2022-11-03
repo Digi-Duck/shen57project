@@ -1,7 +1,7 @@
 @extends('backstage.template')
 
 @section('title')
-上傳一般消息
+一般消息編輯
 @endsection
 
 @section('css')

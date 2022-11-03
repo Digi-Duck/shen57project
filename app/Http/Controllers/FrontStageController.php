@@ -9,11 +9,14 @@ use App\Models\News;
 class FrontStageController extends Controller
 {
     public function index(){
-        return view('frontstage.index');
+        $mainnews = Mainnews::orderBy('id','desc')->take(1)->get();
+        return view('frontstage.index',compact('mainnews'));
     }
 
     public function news(){
-        return view('frontstage.news');
+        $mainnews = Mainnews::orderBy('id','desc')->take(1)->get();
+        $news = News::orderBy('id','desc')->get();
+        return view('frontstage.news',compact('mainnews','news'));
     }
 
     public function location(){

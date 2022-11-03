@@ -1,7 +1,7 @@
 @extends('backstage.template')
 
 @section('title')
-
+主要消息上傳
 @endsection
 
 @section('css')
@@ -42,6 +42,15 @@
                                 height: 100,
                                 placeholder: '請輸入簡要內容 ( 此區塊內容會出現在首頁，建議行數為 5 行以內 )',
                                 inheritPlaceholder: true,
+                                toolbar: [
+                                    // [groupName, [list of button]]
+                                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                                    ['fontsize', ['fontsize']],
+                                    ['color', ['color']],
+                                    ['para', ['ul', 'ol', 'paragraph']],
+                                    ['height', ['height']]
+                                ]
                             });
                             $('#summernote').summernote('code', '');
                         });
@@ -55,6 +64,15 @@
                                 height: 300,
                                 placeholder: '請輸入詳細內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )',
                                 inheritPlaceholder: true,
+                                toolbar: [
+                                    // [groupName, [list of button]]
+                                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                                    ['fontsize', ['fontsize']],
+                                    ['color', ['color']],
+                                    ['para', ['ul', 'ol', 'paragraph']],
+                                    ['height', ['height']]
+                                ]
                             });
                             $('#summernote2').summernote('code', '');
                         });

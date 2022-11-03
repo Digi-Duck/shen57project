@@ -12,8 +12,10 @@
 @section('main')
     <main class="news-list">
         <div class="title">
-            主要消息 / 管理消息
+            <div>主要消息 / 管理消息</div>
+            <span class="note-title">! 注意 ! </span> <span class="note-content">主要消息在頁面上只會出現最新的一則，其餘主要消息不會顯示</span>
         </div>
+
 
         <!-- 套版用start -->
         @foreach ($newslist as $item)
@@ -26,12 +28,12 @@
                         <h5>{{$item->title}}</h5><span>{{$item->date}}</span>
                     </div>
                     <div class="content">
-                        <p class="content-title">首頁內文</p>
-                        {{$item->content}}
+                        <h6 class="content-title">首頁內文</h6>
+                        {!!$item->content!!}
                     </div>
                     <div class="content">
-                        <p class="content-title">內容頁內文</p>
-                        {{$item->content2}}
+                        <h6 class="content-title">內容頁內文</h6>
+                        {!!$item->content2!!}
                     </div>
                 </div>
             </div>

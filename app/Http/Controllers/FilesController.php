@@ -106,7 +106,7 @@ class FilesController extends Controller
 
         return $data;
     }
-    //
+    //刪除路徑檔案
     public static function deleteUpload($url)
     {
         if (file_exists(public_path() . $url)) {

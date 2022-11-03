@@ -90,15 +90,21 @@ body {
   justify-content: start;
   align-items: start;
   background: var(--darkModeBlack, #26292c);
+
 }
 
 .nav {
   width: 250px !important;
-  height: 100%;
+  height: 100vh;
+  background-color: var(--darkModeBlack, #26292c);
+  top: 0;
+  left: 0;
   padding: 50px 30px;
   color: var(--darkModeWhite, #ffffff);
+  position: relative;
 }
 .nav ul {
+
   padding: 0;
   list-style: none;
 }
@@ -115,6 +121,10 @@ body {
   color: var(--darkModeDarkBrown, #767067);
   font-size: 20px;
   font-weight: 700;
+  position: fixed;
+  left: 125px;
+  transform: translateX(-50%);
+
 }
 .nav .ul-title .li-title {
   margin-top: 20px;
@@ -128,4 +138,23 @@ body {
   margin-top: 10px;
   font-size: 15px;
   color: var(--darkModeGray, #767676);
-}/*# sourceMappingURL=nav.css.map */
+}
+.logOut{
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logOut button{
+    padding: 3px 10px;
+    color: var(--darkModeWhite, #ffffff);
+    border: none;
+    background-color: var(--darkModeDarkBrown, #767067);
+}
+
+.logOut button:hover{
+    background-color: var(--darkModeDarkBrown, #9b9895);
+}

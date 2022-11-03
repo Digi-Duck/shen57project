@@ -4,7 +4,7 @@
          <div class="footer-nav">
             <!-- 頁腳-logo -->
             <div class="footer-logo">
-               <img src="{{asset('img/footer/footer-logo.svg')}}" alt="屏東-恆春民宿-森五七行館">
+               <a href="/"><img src="{{asset('/img/footer/footer-logo.svg')}}" alt="屏東-恆春民宿-森五七行館"></a>
             </div>
             <!-- 頁腳-選單盒子 -->
             <div class="footer-menu">
@@ -22,9 +22,24 @@
                      <p>屏東縣恆春鎮大光里砂尾路68-2號</p><span>|</span><p>(08) 886-7658 / 0961-333-857</p><span>|</span><p>shen57hostel@gmail.com</p>
                   </div>
                   <div class="footer-community">
-                     <a href=""><img src="{{asset('img/footer/line.svg')}}" alt="屏東-恆春民宿-森五七行館-line"></a>
-                     <a href="https://www.instagram.com/shen57hostel/"><img src="{{asset('img/footer/instagram.svg')}}" alt="屏東-恆春民宿-森五七行館-instagram"></a>
-                     <a href="https://www.facebook.com/shen57hostel2016/"><img src="{{asset('img/footer/facebook.svg')}}" alt="屏東-恆春民宿-森五七行館-facebook"></a>
+                     <!-- LINE-QRcode按鈕 -->
+                     <button type="button" class="community-line qrcode-open" onclick="openwindow()"><img src="{{asset('/img/footer/line.svg')}}" alt="屏東-恆春民宿-森五七行館-line"></button>
+                        <!-- LINE-QRcode彈跳視窗 -->
+                        <dialog class="linebox show-dialog">
+                           <!-- linebox-bg 視窗內背景 -->
+                           <div class="linebox-bg">
+                              <img src="{{asset('/img/footer/shen57-line-link.jpg')}}" alt="">
+                              <h4>透過行動條碼加入LINE好友</h4>
+                              <div class="linebox-text">
+                                 <p>請在LINE應用程式上開啟「好友」分頁，點選畫面右上方用來加入好友的圖示，</p>
+                                 <p>接著點選「行動條碼」，然後掃描此行動條碼。</p>
+                              </div>
+                              <h5>透過LINE ID新增LINE好友：shen57hostel</h5>
+                              <button type="button" class="qrcode-close" onclick="closewindow()">關閉視窗</button>
+                           </div>
+                        </dialog>
+                     <a href="https://www.instagram.com/shen57hostel/" target="_blank"><img src="{{asset('/img/footer/instagram.svg')}}" alt="屏東-恆春民宿-森五七行館-instagram"></a>
+                     <a href="https://www.facebook.com/shen57hostel2016" target="_blank"><img src="{{asset('/img/footer/facebook.svg')}}" alt="屏東-恆春民宿-森五七行館-facebook"></a>
                   </div>
                </div>
             </div>

@@ -1,7 +1,7 @@
 @extends('backstage.template')
 
 @section('title')
-上傳一般消息
+一般消息上傳
 @endsection
 
 @section('css')
@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-    <link rel="stylesheet" href="{{asset('css/backstage/add-main-news.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/backstage/add-main-news.css') }}">
 @endsection
 
 
@@ -23,7 +23,8 @@
             <form action="/admin/addnews" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="add-title">
-                    <label for="date">時間</label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )">
+                    <label for="date">時間</label><input type="text" name="date" id="date"
+                        placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )">
                 </div>
                 <div class="add-title">
                     <label for="title">標題</label><input type="text" name="title" id="title" placeholder="請輸入標題">
@@ -42,6 +43,15 @@
                                 height: 300,
                                 placeholder: '請輸入內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )',
                                 inheritPlaceholder: true,
+                                toolbar: [
+                                    // [groupName, [list of button]]
+                                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                                    ['fontsize', ['fontsize']],
+                                    ['color', ['color']],
+                                    ['para', ['ul', 'ol', 'paragraph']],
+                                    ['height', ['height']]
+                                ]
                             });
                             $('#summernote2').summernote('code', '');
                         });

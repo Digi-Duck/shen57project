@@ -15,15 +15,14 @@ use App\Http\Controllers\BackStageController;
 |
 */
 
-Route::get('/admin', function () {
-    return view('welcome');
-});
+Route::get('/admin', [BackStageController::class,'mainList'])->middleware(['auth', 'verified']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
 
 
 Route::get('/',[FrontStageController::class,'index']);
@@ -34,14 +33,14 @@ Route::get('/booking',[FrontStageController::class,'booking']);
 Route::get('/story',[FrontStageController::class,'story']);
 Route::get('/location',[FrontStageController::class,'location']);
 
+Route::get('/admin/main-news-list',[BackStageController::class,'mainList'])->middleware(['auth', 'verified']);
+Route::get('/admin/add-main-news',[BackStageController::class,'mainAdd'])->middleware(['auth', 'verified']);
+Route::get('/admin/news-list',[BackStageController::class,'newsList'])->middleware(['auth', 'verified']);
+Route::get('/admin/add-news',[BackStageController::class,'newsAdd'])->middleware(['auth', 'verified']);
 
-
-Route::get('/admin/login',[BackStageController::class,'login']);
-Route::get('/admin/login/check',[BackStageController::class,'checklogin']);
-Route::get('/admin/main-news-list',[BackStageController::class,'mainList']);
-Route::get('/admin/add-main-news',[BackStageController::class,'mainAdd']);
-Route::get('/admin/news-list',[BackStageController::class,'newsList']);
-Route::get('/admin/add-news',[BackStageController::class,'newsAdd']);
+Route::get('/admin/register', function () {
+    return view('welcome');
+});
 
 //新增消息
 Route::post('/admin/addnews',[BackStageController::class,'addnews']);

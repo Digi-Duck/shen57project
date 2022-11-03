@@ -47,6 +47,13 @@
                 </ul>
             </li>
         </ul>
+        <div class="logOut">
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+
+                <button type="submit">登出</button>
+            </form>
+        </div>
     </nav>
     @yield('main')
     @yield('js')

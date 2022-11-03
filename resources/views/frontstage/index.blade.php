@@ -211,18 +211,16 @@
                             <div class="news-title-text">​最新消息•活動訊息•優惠專案</div>
                         </div>
                         <div class="news-content">
-                            <div class="news-date">2022.10.12 Tue</div>
-                            <div class="news-name">2023農曆春節訂房專案</div>
+                            <div class="news-date">{{$mainnews[0]->date}}</div>
+                            <div class="news-name">{{$mainnews[0]->title}}</div>
                             <div class="news-intro">
-                                <p>2022/11/1 上午 09:00 起開放官網線上訂房！<br><br>
-                                    2022年11月1號官網開放預定2023農曆春節訂房，請依人數選擇房型，因應春節旅客較多，現場無法加人。敬請配合。
-                                </p>
+                                {!!$mainnews[0]->content!!}
                             </div>
                             <a href="/news" class="more-btn news-more-btn">查看更多</a>
                         </div>
                     </div>
                     <div class="news-content-pic">
-                        <img src="{{ asset('/img/index/index01.png') }}" alt="">
+                        <img src="{{ $mainnews[0]->img_path }}" alt="">
                     </div>
                 </div>
             </div>

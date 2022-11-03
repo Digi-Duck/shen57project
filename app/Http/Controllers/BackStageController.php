@@ -10,13 +10,6 @@ use App\Models\News;
 
 class BackStageController extends Controller
 {
-    public function login(){
-        return view('backstage.login');
-    }
-    public function checklogin(Request $request){
-        //
-    }
-
     //基本回傳view
     public function mainList(){
         $newslist = Mainnews::orderBy('id','desc')->get();
@@ -85,7 +78,7 @@ class BackStageController extends Controller
         return view('backstage.edit-news',compact('editnews'));
     }
 
-    //將編輯後的結果表單與id帶到model中，並更新資料
+    //將編輯後的結果表單與id帶到model中，並更新資料(且要刪除舊圖片)
     public function newseditchecked(Request $request,$id){
         $title = $request->title;
         $date = $request->date;
@@ -96,8 +89,12 @@ class BackStageController extends Controller
         $editone->title = $title;
         $editone->date = $date;
         $editone->content = $content;
+        $imgold = $editone->img_path;
+
 
         if(!$img == null || !$img == '' ){
+            FilesController::deleteUpload($imgOld);
+
             $path = FilesController::imgUpload($img, '/news');
             $editone->img_path = $path;
         }
@@ -125,9 +122,11 @@ class BackStageController extends Controller
         $editone->date = $date;
         $editone->content = $content1;
         $editone->content2 = $content2;
+        $imgold = $editone->img_path;
 
         if(!$img == null || !$img == '' ){
-            $path = FilesController::imgUpload($img, '/news');
+            FilesController::deleteUpload($imgold);
+            $path = FilesController::imgUpload($img, '/mainnews');
             $editone->img_path = $path;
         }
 
@@ -139,6 +138,8 @@ class BackStageController extends Controller
     //刪除消息
     public function mainDel($id){
         $editnews = Mainnews::find($id);
+        $img = $editnews->img_path;
+        FilesController::deleteUpload($img);
         $editnews->delete();
 
         return redirect('/admin/main-news-list');
@@ -146,6 +147,9 @@ class BackStageController extends Controller
 
     public function newsDel($id){
         $editnews = News::find($id);
+        $img = $editnews->img_path;
+        FilesController::deleteUpload($img);
+
         $editnews->delete();
 
         return redirect('/admin/news-list');

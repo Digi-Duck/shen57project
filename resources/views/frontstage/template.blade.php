@@ -31,6 +31,7 @@
     @include('frontstage.footer')
 
 
+    <script src="{{ asset('/js/line.js') }}"></script>
     {{-- js --}}
     @yield('js')
 </body>

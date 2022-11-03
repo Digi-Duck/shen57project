@@ -101,7 +101,7 @@ body {
   height: auto;
   padding: 15px;
   background-color: var(--darkModeBlack, #26292c);
-  border-radius: 15px;
+  box-shadow: 0 0 5px rgb(31, 31, 31);
 }
 #login .login-area .logobox {
   width: 300px;

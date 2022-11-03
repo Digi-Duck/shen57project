@@ -25,7 +25,7 @@
                         <h5>{{$item->title}}</h5><span>{{$item->date}}</span>
                     </div>
                     <div class="content">
-                        {{$item->content}}
+                        {!!$item->content!!}
                     </div>
                 </div>
             </div>
