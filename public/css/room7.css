@@ -97,13 +97,12 @@ body {
   height: 100%;
   padding-top: 50px;
 }
-
 @media (max-width: 468px) {
-    #room7 {
-        padding-top: 30px;
-    }
+  #room7 {
+    margin-top: 50px;
+    padding-top: 30px;
   }
-
+}
 
 .r-swiper {
   background-color: rgb(247, 255, 174);
@@ -541,6 +540,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  flex-direction: row-reverse;
 }
 @media (max-width: 570px) {
   .r-rooms .r-rooms-shen5 .r-rooms-shen-text .r-rooms-shen-text-top,
@@ -561,12 +561,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  flex-direction: row-reverse;
 }
 @media (max-width: 570px) {
   .r-rooms .r-rooms-shen5 .r-rooms-shen-text .r-rooms-shen-text-bottom,
 .r-rooms .r-rooms-shen7 .r-rooms-shen-text .r-rooms-shen-text-bottom {
     font-size: 12px;
   }
+}
+.r-rooms .r-rooms-shen5 .r-rooms-shen-text .r-rooms-shen-text-bottom span,
+.r-rooms .r-rooms-shen7 .r-rooms-shen-text .r-rooms-shen-text-bottom span {
+  text-align: right;
 }
 .r-rooms .r-rooms-shen5 .r-rooms-shen-text .r-rooms-shen-text-bottom img,
 .r-rooms .r-rooms-shen7 .r-rooms-shen-text .r-rooms-shen-text-bottom img {
@@ -600,6 +605,19 @@ body {
 }
 .r-rooms .r-rooms-shen7 {
   background-image: url("../img/rooms/room7-cover.jpg");
+}
+.r-rooms .r-rooms-shen7 .bookingArea {
+  background-color: var(--darkModeWhite, #ffffff);
+  opacity: 0.6;
+}
+.r-rooms .r-rooms-shen7 .bookingArea .r-shen5-text {
+  color: var(--darkModeBlack, #26292c);
+}
+.r-rooms .r-rooms-shen7 .bookingArea .r-rooms-shen-text-top {
+  color: var(--darkModeBlack, #26292c);
+}
+.r-rooms .r-rooms-shen7 .bookingArea .r-rooms-shen-text-bottom {
+  color: var(--darkModeBlack, #26292c);
 }
 .r-rooms .r-rooms-shen7 .r-rooms-shen-text {
   display: flex;

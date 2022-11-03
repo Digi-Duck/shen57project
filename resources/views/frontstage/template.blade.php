@@ -30,7 +30,8 @@
     {{-- footer 引入 --}}
     @include('frontstage.footer')
 
-
+    {{-- 大家都有的js --}}
+    <script src="{{ asset('/js/hambtn.js') }}"></script>
     <script src="{{ asset('/js/line.js') }}"></script>
     {{-- js --}}
     @yield('js')

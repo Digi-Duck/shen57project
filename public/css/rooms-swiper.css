@@ -88,6 +88,9 @@ textarea {
   padding: 0;
 }
 
+body {
+  font-family: "Noto Serif", Noto Serif TC;
+}
 
 .swiper {
   width: 100%;
@@ -208,8 +211,8 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 3px;
-  height: 3px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -217,12 +220,11 @@ textarea {
   -o-border-radius: 50%;
   display: inline-block;
   border: 1px solid var(--darkModeLightGreen, #93948b);
-  box-sizing: content-box;
 }
 
 .swiper-pagination-bullet-active span {
-  width: 9px;
-  height: 9px;
+  width: 11px;
+  height: 11px;
   background-color: var(--darkModeDarkGreen, #334c3f);
   border: 1px solid var(--darkModeDarkGreen, #334c3f);
 }

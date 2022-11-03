@@ -1,10 +1,3 @@
-:root {
-  --p1440: calc(100vw / 1440);
-  --ps: calc(100vw / 1100);
-  --pp: calc(100vw / 768);
-  --ph: calc(100vw / 468);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -82,6 +75,13 @@ textarea {
 }
 
 :root {
+  --p1440: calc(100vw / 1440);
+  --ps: calc(100vw / 1100);
+  --pp: calc(100vw / 768);
+  --ph: calc(100vw / 468);
+}
+
+:root {
   --p600:calc(100vw / 600);
 }
 
@@ -94,9 +94,6 @@ textarea {
   text-align: center;
   font-size: 18px;
   background: var(--darkModeWhite, #ffffff);
-  background-image: url(../img/story/bg2@2x.png);
-  background-size: 50px;
-  background-position: center top;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -115,7 +112,7 @@ textarea {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url(../img/story/bg2@2x.png);
+  background-image: url("../img/story/bg2@2x.png");
   background-size: 50px;
   background-position: center bottom;
   padding-top: 30px;
@@ -124,7 +121,7 @@ textarea {
 .swiper-button-next {
   width: 50%;
   height: 100%;
-  top: 30px;
+  top: 0;
   position: absolute;
   opacity: 0;
   cursor: url(../img/story/mouse-right-s.svg), pointer;
@@ -133,7 +130,7 @@ textarea {
 .swiper-button-prev {
   width: 50%;
   height: 100%;
-  top: 30px;
+  top: 0;
   position: absolute;
   opacity: 0;
   cursor: url(../img/story/mouse-left-s.svg), pointer;
@@ -156,6 +153,9 @@ textarea {
 .swiper-slide {
   width: 100%;
   height: 100%;
+  background-image: url("../img/story/bg2@2x.png");
+  background-size: 50px;
+  background-position: center top;
 }
 .swiper-slide img {
   width: 100%;
@@ -305,7 +305,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/story/bg2@2x.png);
+  background-image: url("../img/story/bg2@2x.png");
   background-size: 50px;
   background-position: center top;
 }

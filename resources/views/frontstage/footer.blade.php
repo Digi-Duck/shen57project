@@ -4,7 +4,7 @@
          <div class="footer-nav">
             <!-- 頁腳-logo -->
             <div class="footer-logo">
-               <a href="/"><img src="{{asset('/img/footer/footer-logo.svg')}}" alt="屏東-恆春民宿-森五七行館"></a>
+               <a href="/home"><img src="{{asset('/img/footer/footer-logo.svg')}}" alt="屏東-恆春民宿-森五七行館"></a>
             </div>
             <!-- 頁腳-選單盒子 -->
             <div class="footer-menu">
@@ -25,7 +25,7 @@
                      <!-- LINE-QRcode按鈕 -->
                      <button type="button" class="community-line qrcode-open" onclick="openwindow()"><img src="{{asset('/img/footer/line.svg')}}" alt="屏東-恆春民宿-森五七行館-line"></button>
                         <!-- LINE-QRcode彈跳視窗 -->
-                        <dialog class="linebox show-dialog">
+                        <div class="linebox show-dialog">
                            <!-- linebox-bg 視窗內背景 -->
                            <div class="linebox-bg">
                               <img src="{{asset('/img/footer/shen57-line-link.jpg')}}" alt="">
@@ -37,7 +37,7 @@
                               <h5>透過LINE ID新增LINE好友：shen57hostel</h5>
                               <button type="button" class="qrcode-close" onclick="closewindow()">關閉視窗</button>
                            </div>
-                        </dialog>
+                        </div>
                      <a href="https://www.instagram.com/shen57hostel/" target="_blank"><img src="{{asset('/img/footer/instagram.svg')}}" alt="屏東-恆春民宿-森五七行館-instagram"></a>
                      <a href="https://www.facebook.com/shen57hostel2016" target="_blank"><img src="{{asset('/img/footer/facebook.svg')}}" alt="屏東-恆春民宿-森五七行館-facebook"></a>
                   </div>

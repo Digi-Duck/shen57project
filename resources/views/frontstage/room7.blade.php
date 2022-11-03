@@ -90,7 +90,7 @@
                                 <span>平日 12000 / 棟 ，</span>
                                 <span>假日、春吶 16000 / 棟</span>
                             </div>
-                            <a href="#" class="r-info-map-link"><span></span></a>
+                            <a href="/booking" class="r-info-map-link"><span></span></a>
                         </div>
                     </div>
                     <div class="r-info-top-box">
@@ -169,7 +169,7 @@
                 </div>
             </a>
             <a href="/booking" class="r-rooms-shen7">
-                <div class="r-rooms-shen-text">
+                <div class="r-rooms-shen-text bookingArea">
                     <div class="r-rooms-shen-text-top">
                         <span>森 7&emsp;/&emsp;和風館</span>
                         <span>訂&ensp;房&ensp;流&ensp;程&ensp;說&ensp;明</span>

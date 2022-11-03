@@ -12,7 +12,7 @@
 @section('main')
     <!-- intro animation-->
     <!-- GRADIENT SPINNER -->
-    <div id="intro" @if (Route::is('home')) class="noact" @endif>
+    <div id="intro">
         <div class="spinner-box">
             <div class="logo-box">
                 <div class="circle-border">
@@ -41,13 +41,39 @@
 
         </div>
     </div>
+<!-- intro animation js -->
+    <script>
+        const logoWords = document.querySelector('.words-box>img')
+        let logoWordsLoaded = false
+        let indexLoaded = false
+
+        const intro = document.getElementById('intro')
+        console.log(indexLoaded);
+        window.addEventListener("load", function (event) {
+            indexLoaded = true
+            console.log(indexLoaded);
+        });
+
+        logoWords.addEventListener('animationend', (event) => {
+
+            logoWordsLoaded = true
+
+            if (logoWordsLoaded && indexLoaded) {
+                intro.classList.add('noact')
+            }
+
+        });
+
+
+
+    </script>
 
     <main id="index">
         <section class="banner">
             <nav>
                 <ul class="index-menu">
                     <li><a href="/news">訊 News</a></li>
-                    <li><a href="/room5">宿 Rooms</a></li>
+                    <li><a href="/">宿 Rooms</a></li>
                     <li><a href="/booking">訂 Booking</a></li>
                     <li><a href="/story">源 Story</a></li>
                     <li><a href="/location">行 Location</a></li>
@@ -276,15 +302,14 @@
 @endsection
 
 @section('js')
-    <link rel="stylesheet" href="{{asset('js/aos/aos.css')}}">
-    <script src="{{asset('js/aos/aos.js')}}"></script>
-    <script src="{{asset('js/index.js')}}"></script>
-    <script>
-        AOS.init({
-            easing: 'ease-in-out-sine',
-            offset: 200,
-            duration: 1000,
-            once: true,
-        });
-    </script>
+<link rel="stylesheet" href="{{ asset('js/aos/aos.css') }}">
+<script src="{{ asset('js/aos/aos.js') }}"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        offset: 200,
+        duration: 1000,
+        once: true,
+    });
+</script>
 @endsection

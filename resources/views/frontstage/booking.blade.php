@@ -44,8 +44,8 @@
                                                     shen57hostel
                                                 </span>
                                                 <div>
-                                                    <a href=""><img src="{{asset('/img/booking/line-white.svg')}}"
-                                                            alt="屏東-恆春民宿-森五七行館-line"></a>
+                                                    <button class="lineBtn" onclick="openwindow()"><img src="{{asset('/img/booking/line-white.svg')}}"
+                                                            alt="屏東-恆春民宿-森五七行館-line"></button>
                                                 </div>
                                             </div>
                                             <div class="message-facebook">

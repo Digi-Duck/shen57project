@@ -1,18 +1,21 @@
 const dialog = document.querySelector('.show-dialog')
-const openbtn = document.querySelector('.qrcode-open')
-const closebtn = document.querySelector('.qrcode-close')
 
 function openwindow(){
-    dialog.showModal();
+   dialog.classList.add('showThis')
 }
 function closewindow(){
-    dialog.close();
+   dialog.classList.remove('showThis')
 }
 // 點擊視窗外空白處可取消視窗
 const linebox = document.querySelector('.linebox')
 
 dialog.onclick = function(bodyclose){
-    if(bodyclose.target == linebox){
-        dialog.close();
-    }
+   if(bodyclose.target == linebox){
+      closewindow()
+      // 阻止事件冒泡
+      bodyclose.stopPropagation();
+   }else{
+      // 阻止另一個事件冒泡
+      bodyclose.stopPropagation();
+   }
 }

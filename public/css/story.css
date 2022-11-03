@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
-:root {
-  --p1440: calc(100vw / 1440);
-  --ps: calc(100vw / 1100);
-  --pp: calc(100vw / 768);
-  --ph: calc(100vw / 468);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -83,6 +76,13 @@ textarea {
   background-color: var(--darkModeDarkGreen, #334c3f);
 }
 
+:root {
+  --p1440: calc(100vw / 1440);
+  --ps: calc(100vw / 1100);
+  --pp: calc(100vw / 768);
+  --ph: calc(100vw / 468);
+}
+
 body {
   font-family: "Noto Serif", Noto Serif TC;
 }
@@ -93,6 +93,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 468px) {
+  #story {
+    margin-top: 50px;
+    padding-top: unset;
+  }
 }
 
 .container {
@@ -171,7 +177,9 @@ body {
   flex: 1;
   width: 100%;
   max-width: 768px;
+  height: auto;
   margin-bottom: 100px;
+  position: relative;
 }
 @media (max-width: 468px) {
   .s-text {
@@ -179,11 +187,12 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 60px;
+    position: unset;
   }
 }
 
 .s-text-left {
-  padding-right: 50px;
+  padding-right: 130px;
 }
 @media (max-width: 468px) {
   .s-text-left {
@@ -217,7 +226,9 @@ body {
   align-items: flex-end;
   flex-direction: column;
   width: 68px;
-  height: 620px;
+  height: 100%;
+  right: 0;
+  position: absolute;
 }
 @media (max-width: 468px) {
   .s-text-right {
@@ -226,6 +237,7 @@ body {
     height: 80px;
     padding-top: 0;
     padding-bottom: 28px;
+    position: unset;
   }
 }
 .s-text-right .s-word {
@@ -249,4 +261,4 @@ body {
   .s-text-right .s-word-en {
     font-size: 17px;
   }
-}/*# sourceMappingURL=story.css.map */
+}

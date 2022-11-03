@@ -26,12 +26,13 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/',[FrontStageController::class,'index']);
-Route::get('/news',[FrontStageController::class,'news']);
-Route::get('/room5',[FrontStageController::class,'room5']);
-Route::get('/room7',[FrontStageController::class,'room7']);
-Route::get('/booking',[FrontStageController::class,'booking']);
-Route::get('/story',[FrontStageController::class,'story']);
-Route::get('/location',[FrontStageController::class,'location']);
+Route::get('/home',[FrontStageController::class,'index'])->name('home');
+Route::get('/news',[FrontStageController::class,'news'])->name('news');
+Route::get('/room5',[FrontStageController::class,'room5'])->name('room');
+Route::get('/room7',[FrontStageController::class,'room7'])->name('room');
+Route::get('/booking',[FrontStageController::class,'booking'])->name('booking');
+Route::get('/story',[FrontStageController::class,'story'])->name('story');
+Route::get('/location',[FrontStageController::class,'location'])->name('location');
 
 Route::get('/admin/main-news-list',[BackStageController::class,'mainList'])->middleware(['auth', 'verified']);
 Route::get('/admin/add-main-news',[BackStageController::class,'mainAdd'])->middleware(['auth', 'verified']);
