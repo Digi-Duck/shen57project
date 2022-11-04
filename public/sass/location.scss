@@ -194,7 +194,7 @@ body {
                         min-width: 81px;
 
                         @include pad{
-                            margin-right:unset;
+                            margin-right: 0;
                         }
 
                         @include phone {
@@ -366,9 +366,11 @@ body {
             font-weight: 700;
             margin-right: 45px;
 
+            @include w900{
+                margin-right: 0;
+            }
             @include phone {
                 font-size: $phoneH5;
-                margin-right: 20px;
             }
         }
 

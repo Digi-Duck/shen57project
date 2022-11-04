@@ -47,7 +47,7 @@
             <nav>
                 <ul class="index-menu">
                     <li><a href="/news">訊 News</a></li>
-                    <li><a href="/room5">宿 Rooms</a></li>
+                    <li><a onclick="openrooms()">宿 Rooms</a></li>
                     <li><a href="/booking">訂 Booking</a></li>
                     <li><a href="/story">源 Story</a></li>
                     <li><a href="/location">行 Location</a></li>

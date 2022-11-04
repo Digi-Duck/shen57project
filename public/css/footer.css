@@ -214,6 +214,16 @@ footer {
   }
 }
 
+.footer-menu ul .rooms-boxbtn {
+  font-family: "Noto Serif", Noto Serif TC;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .footer-menu ul li {
   color: var(--darkModeWhite, #ffffff);
   padding: 0 25px;
@@ -251,7 +261,7 @@ footer {
   .footer-menu ul li {
     padding: unset;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -342,7 +352,7 @@ footer {
 
 @media (max-width: 468px) {
   .footer-menu .footer-contact .footer-text {
-    font-size: 14px;
+    font-size: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,15 +547,21 @@ footer {
   }
 }
 
-.footer-copyright p {
+.footer-copyright span {
   padding: 0 6px;
   font-size: 14px;
 }
 
 @media (max-width: 1100px) {
-  .footer-copyright p {
+  .footer-copyright span {
     margin: 0;
     padding: unset;
+  }
+}
+
+@media (max-width: 468px) {
+  .footer-copyright span {
+    font-size: 12px;
   }
 }
 

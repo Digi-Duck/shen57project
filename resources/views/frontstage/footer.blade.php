@@ -11,7 +11,7 @@
                <!-- 頁腳-分頁欄 -->
                <ul>
                   <a href="/news"><li >訊 News</li></a>
-                  <a href="/room5"><li >宿 Rooms</li></a>
+                  <button type="button" class="rooms-boxbtn" onclick="openrooms()"><li >宿 Rooms</li></button>
                   <a href="/booking"><li >訂 Booking</li></a>
                   <a href="/story"><li >源 Story</li></a>
                   <a href="/location"><li id="footer-menu-lastli">行 Location</li></a>
@@ -48,8 +48,8 @@
          <div id="footer-line"></div>
          <!-- 頁腳-copyright -->
          <div class="footer-copyright">
-            <p>Copyright © 2022, Shen57 Hostel , All Rights Reserved.</p>
-            <p>Website designed by FiveMinusOne & DreamCenter</p>
+            <span>Copyright © 2022, Shen57 Hostel , All Rights Reserved.</span>
+            <span>Website designed by FiveMinusOne & DreamCenter</span>
          </div>
       </div>
    </footer>
