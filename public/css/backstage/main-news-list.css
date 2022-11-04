@@ -128,7 +128,7 @@ textarea {
   color: var(--darkModeBlack, #26292c);
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
 }
 .news-list .main-news-list .main-news-box .info-box .title h5 {
   font-size: 17px;
@@ -153,7 +153,7 @@ textarea {
   width: 100%;
   padding: 10px 0 0;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: start;
 }
 .news-list .main-news-list .btnArea a {
@@ -207,3 +207,15 @@ font-size: 15px;
     font-size: 15px;
     font-weight: 500;
 }
+
+.news-list .main-news-list .btnArea input{
+    border-radius: none;
+}
+
+.news-list .main-news-list .btnArea .show-content{
+    color: var(--darkModeGray, #767676);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+

@@ -211,7 +211,7 @@ header{
             width: 45.5%;
             height: 100%;
             padding-right: 30px;
-            @include flex(start,end);
+            @include flex(flex-start,flex-end);
             flex-wrap: wrap;
             @include pad900{
               width: 40%;
@@ -220,7 +220,7 @@ header{
               width: 100%;
               height: 350px;
               padding-right: unset;
-              @include flex(start,start);
+              @include flex(flex-start,flex-start);
             }
             ul{
               width: 100%;
@@ -253,7 +253,7 @@ header{
               }
               li{
                 color: var(--darkModeDarkGreen,$shen57DarkGreen);
-                font-size: $webH1;
+                font-size: $webH2;
                 line-height: 78px;
                 border-bottom: 2px solid transparent;
                 display: flex;
@@ -294,7 +294,7 @@ header{
           .hambox-info-right{
             width: 54.5%;
             height: 100%;
-            @include flex(start,end);
+            @include flex(flex-start,flex-end);
             flex-wrap: wrap;
             @include pad900{
               width: 60%;
@@ -303,7 +303,7 @@ header{
               width: 100%;
               height: 350px;
               padding: 0 30px;
-              @include flex(start,start);
+              @include flex(flex-start,flex-start);
             }
             @include phone{
               padding: 0 10px;
@@ -336,7 +336,6 @@ header{
                     max-width: 30px;
                     max-height: 30px;
                     margin: 0 8px;
-
                     @include phone{
                       max-width: 25px;
                       max-height: 25px;
@@ -344,7 +343,6 @@ header{
                     img{
                       width: 100%;
                       height: 100%;
-                      cursor: pointer;
                     }
                   }
                   // LINE-QRcode按鈕
@@ -447,7 +445,7 @@ header{
                 width: 100%;
                 padding: 15px 0;
                 border-bottom: 1px solid var(--darkModeBrown,$shen57Brown);
-                @include flex(start,center);
+                @include flex(flex-start,center);
                 @include headerpad{
                   padding: 12px 0;
                 }
@@ -469,7 +467,7 @@ header{
                     min-width: 65px;
                     font-size: $phoneH5;
                     padding-right: unset;
-                    @include flex(start,center);
+                    @include flex(flex-start,center);
                   }
                 }
                 .info-right-content{
@@ -536,7 +534,7 @@ header{
                   height: 50%;
                   font-weight: bold;
                   font-size: $webH4;
-                  @include flex(center,start);
+                  @include flex(center,flex-start);
                   @media (min-width:1024px){
                     &:hover{
                       color: var(--darkModeBlack,$shen57black);
@@ -560,21 +558,32 @@ header{
                   width: 100%;
                   height: 50%;
                   font-size: $webH6;
-                  @include flex(center,end);
+                  @include flex(center,flex-end);
                   @include headerpad{
+                    height: 60%;
                     text-align: center;
-                    @include flex(start,center);
+                    @include flex(flex-start,center);
                     flex-direction: column;
                     span{
-                      padding-bottom: 45px;
+                      margin-bottom: 40px;
                     }
                   }
                   @include phone570{
                     font-size: $phoneH6;
                   }
-                  img{
+                  .hambox-shen-left-arrow,
+                  .hambox-shen-right-arrow{
+                    background-size: cover;
+                    background-repeat: no-repeat;
                     width: 112px;
-                    padding-bottom: 5px;
+                    height: 10px;
+                    margin-bottom: 3px;
+                  }
+                  .hambox-shen-left-arrow{
+                    background-image: url("../img/booking/room5-arrow-white.svg");
+                  }
+                  .hambox-shen-right-arrow{
+                    background-image: url("../img/booking/room7-arrow-white.svg");
                   }
                   .text-hidden{
                     @include headerpad{
@@ -595,19 +604,19 @@ header{
                     animation-timing-function: ease-out;
                     .hambox-shen-text-top{
                       color: var(--darkModeBlack,$shen57black);
-                      @include flex(space-between,start);
+                      @include flex(space-between,flex-start);
                     }
                     .hambox-shen-text-bottom{
                       color: var(--darkModeBlack,$shen57black);
-                      @include flex(space-between,end);
-                      .bottom-img-left{
-                        display: block;
+                      @include flex(space-between,flex-end);
+                      .hambox-shen-left-arrow{
+                        background-image: url("../img/booking/room5-arrow-black.svg");
                         animation: moveleft 0.5s;
                         animation-fill-mode: forwards;
                         animation-timing-function: ease-out;
                       }
-                      .bottom-img-right{
-                        display: block;
+                      .hambox-shen-right-arrow{
+                        background-image: url("../img/booking/room7-arrow-black.svg");
                         animation: moveright 0.5s;
                         animation-fill-mode: forwards;
                         animation-timing-function: ease-out;
@@ -689,13 +698,13 @@ header{
     width: 100%;
     max-width: 1160px;
     padding: 65px 50px;
-    @include flex(space-between,start);
+    @include flex(space-between,flex-start);
     flex-direction: column;
     .rooms-info{
       width: 100%;
-      @include flex(space-between,start);
+      @include flex(space-between,flex-start);
       .rooms-info-box{
-        @include flex(start,start);
+        @include flex(flex-start,flex-start);
         @include pad{
           img{
             width: 60px;
@@ -795,7 +804,7 @@ header{
               height: 50%;
               font-weight: bold;
               font-size: $webH4;
-              @include flex(center,start);
+              @include flex(center,flex-start);
               @media (min-width:1024px){
                 &:hover{
                   color: var(--darkModeBlack,$shen57black);
@@ -822,26 +831,32 @@ header{
               width: 100%;
               height: 50%;
               font-size: $webH6;
-              @include flex(center,end);
+              @include flex(center,flex-end);
               @include headerpad{
+                height: 60%;
                 text-align: center;
-                @include flex(start,center);
+                @include flex(flex-start,center);
                 flex-direction: column;
                 span{
-                  padding-bottom: 45px;
-                }
-              }
-              @include pad{
-                span{
-                  padding-bottom: 30px;
+                  margin-bottom: 40px;
                 }
               }
               @include phone570{
                 font-size: $phoneH6;
               }
-              img{
+              .roomsbox-shen-left-arrow,
+              .roomsbox-shen-right-arrow{
+                background-size: cover;
+                background-repeat: no-repeat;
                 width: 112px;
-                padding-bottom: 5px;
+                height: 10px;
+                margin-bottom: 3px;
+              }
+              .roomsbox-shen-left-arrow{
+                background-image: url("../img/booking/room5-arrow-white.svg");
+              }
+              .roomsbox-shen-right-arrow{
+                background-image: url("../img/booking/room7-arrow-white.svg");
               }
               .text-hidden{
                 @include headerpad{
@@ -862,19 +877,19 @@ header{
                 animation-timing-function: ease-out;
                 .roomsbox-shen-text-top{
                   color: var(--darkModeBlack,$shen57black);
-                  @include flex(space-between,start);
+                  @include flex(space-between,flex-start);
                 }
                 .roomsbox-shen-text-bottom{
                   color: var(--darkModeBlack,$shen57black);
-                  @include flex(space-between,end);
-                  .bottom-img-left{
-                    display: block;
+                  @include flex(space-between,flex-end);
+                  .roomsbox-shen-left-arrow{
+                    background-image: url("../img/booking/room5-arrow-black.svg");
                     animation: moveleft 0.5s;
                     animation-fill-mode: forwards;
                     animation-timing-function: ease-out;
                   }
-                  .bottom-img-right{
-                    display: block;
+                  .roomsbox-shen-right-arrow{
+                    background-image: url("../img/booking/room7-arrow-black.svg");
                     animation: moveright 0.5s;
                     animation-fill-mode: forwards;
                     animation-timing-function: ease-out;

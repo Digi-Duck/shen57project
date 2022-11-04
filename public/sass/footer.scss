@@ -129,13 +129,13 @@ footer{
       @include flex(space-between,center);
     }
     @include phone{
-      @include flex(space-between,end);
+      @include flex(space-between,flex-end);
     }
     .footer-text{
       font-size: $webH6;
       padding-right: 45px;
       flex-wrap: wrap;
-      @include flex(start,center);
+      @include flex(flex-start,center);
       @include footerpad{
         padding-right: 20px;
       }

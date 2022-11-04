@@ -113,9 +113,9 @@ body{
         width: 100%;
         height: calc((100% - 40px) / 2);
         display: flex;
-        flex-direction: row;
         justify-content: flex-end;
         align-items: flex-start;
+        flex-direction: row;
         @include roomspad{
           width: 500px;
           @include flex;
@@ -128,8 +128,11 @@ body{
         }
         @include phone{
           width: 300px;
-          @include flex(unset,start);
+          @include flex(unset,flex-start);
           flex-direction: column;
+        }
+        img{
+          width: 400px;
         }
         h4{
           color: var(--darkModeDarkGreen,$shen57DarkGreen);
@@ -145,11 +148,8 @@ body{
           @include phone{
             font-size: $phoneH5;
             padding-bottom: 8px;
-            @include flex(space-between,start);
+            @include flex(space-between,flex-start);
           }
-        }
-        img{
-            width: 400px;
         }
       }
       .r-first-floor{
@@ -171,7 +171,7 @@ body{
       .r-info-top-box{
         width: 100%;
         border-bottom: 1px solid #E1DCD7;
-        @include flex(start,center);
+        @include flex(flex-start,center);
         &:last-child{
           border-bottom: unset;
         }
@@ -203,7 +203,7 @@ body{
         }
         .r-info-link-box{
           width: 100%;
-          @include flex(space-between,start);
+          @include flex(space-between,flex-start);
         }
         .r-info-map-link{
           min-width: 80px;
@@ -264,7 +264,7 @@ body{
   .r-info-bottom{
     width: 100%;
     padding-bottom: 45px;
-    @include flex(space-between,start);
+    @include flex(space-between,flex-start);
     flex-wrap: wrap;
     @include roomspad{
       padding: 30px 0;
@@ -275,7 +275,7 @@ body{
     .r-info-bottom-box{
       width: 100%;
       padding: 0 70px;
-      @include flex(start,start);
+      @include flex(flex-start,flex-start);
       @include roomspad{
         padding: unset;
       }
@@ -375,7 +375,7 @@ body{
         height: 50%;
         font-weight: bold;
         font-size: $webH4;
-        @include flex(space-between,start);
+        @include flex(space-between,flex-start);
         flex-direction: row-reverse;
         @include phone570{
           font-size: $phoneH4;
@@ -397,9 +397,13 @@ body{
         span{
           text-align: right;
         }
-        img{
+        .r-rooms-shen-arrow{
+          background-image: url("../img/rooms/room5-arrow-white.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
           width: 112px;
-          padding-bottom: 5px;
+          height: 10px;
+          margin-bottom: 3px;
         }
       }
       &:hover{
@@ -414,8 +418,8 @@ body{
         }
         .r-rooms-shen-text-bottom{
           color: var(--darkModeBlack,$shen57black);
-          .bottom-img{
-            display: block;
+          .r-rooms-shen-arrow{
+            background-image: url("../img/rooms/room5-arrow-black.svg");
           }
         }
       }

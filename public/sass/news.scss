@@ -47,7 +47,7 @@ body {
     //訊-頁面標題
     .title-area {
       width: 100%;
-      @include flex(start, center);
+      @include flex(flex-start, center);
 
       //訊書法文字
       img {
@@ -76,14 +76,14 @@ body {
     }
     //最新消息內容
     .news-info-container {
-      @include flex(start, start);
+      @include flex(flex-start, flex-start);
       flex-direction: column;
 
       //主要最新消息&一般最新消息共同設置
       .main-news-area,
       .sub-news-area {
         width: 100%;
-        @include flex(start, start);
+        @include flex(flex-start, flex-start);
         border-bottom: 1px solid var(--darkModeGray, $shen57gray);
         @include pad{
           flex-direction: column;
@@ -127,7 +127,7 @@ body {
       //一般消息特殊設置-圖片CSS
       .sub-news-area {
         padding: 30px 20px;
-        @include flex(start, start);
+        @include flex(flex-start, flex-start);
         flex-direction: row-reverse;
         @include pad{
           flex-direction: column;
@@ -188,7 +188,7 @@ body {
             line-height: 35px;
           }
         }
-        
+
         //內文字體大小設置
         .info-content {
           font-size: $webH6;

@@ -79,7 +79,7 @@ body {
 }
 
 .swiper-slide {
-    @include flex(start,start);
+    @include flex(flex-start,flex-start);
     span{
         writing-mode: vertical-lr;
         text-orientation: sideways-right;

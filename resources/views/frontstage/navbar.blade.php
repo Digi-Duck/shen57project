@@ -118,12 +118,7 @@
                                             <div class="hambox-shen-text-bottom">
                                                 <span class="text-hidden">本房型為 <b>獨棟別墅</b> <br>室內坪數 <b>50</b> 坪，室外約
                                                     <b>150</b> 坪</span>
-                                                <div>
-                                                    <img src="{{ asset('/img/booking/room5-arrow-white.svg') }}"
-                                                        alt="屏東-恆春民宿-前往森五時尚館">
-                                                    <img src="{{ asset('/img/booking/room5-arrow-black.svg') }}"
-                                                        alt="屏東-恆春民宿-前往森五時尚館" class="bottom-img-left" hidden>
-                                                </div>
+                                                    <div class="hambox-shen-left-arrow"></div>
                                             </div>
                                         </div>
                                     </a>
@@ -136,10 +131,7 @@
                                             <div class="hambox-shen-text-bottom">
                                                 <span class="text-hidden">本房型為 <b>獨棟別墅</b> <br>室內坪數 <b>50</b> 坪，室外約
                                                     <b>150</b> 坪</span>
-                                                <img src="{{ asset('/img/booking/room7-arrow-white.svg') }}"
-                                                    alt="屏東-恆春民宿-前往森七和風館">
-                                                <img src="{{ asset('/img/booking/room7-arrow-black.svg') }}"
-                                                    alt="屏東-恆春民宿-前往森七和風館" class="bottom-img-right" hidden>
+                                                    <div class="hambox-shen-right-arrow"></div>
                                             </div>
                                         </div>
                                     </a>
@@ -180,9 +172,7 @@
                             <div class="roomsbox-shen-text-bottom">
                                 <span class="text-hidden">本房型為 <b>獨棟別墅</b> <br>室內坪數 <b>50</b> 坪，室外約 <b>150</b> 坪</span>
                                 <div>
-                                    <img src="{{asset('/img/booking/room5-arrow-white.svg')}}" alt="屏東-恆春民宿-前往森五時尚館">
-                                    <img src="{{asset('/img/booking/room5-arrow-black.svg')}}" alt="屏東-恆春民宿-前往森五時尚館"
-                                        class="bottom-img-left" hidden>
+                                    <div class="roomsbox-shen-left-arrow"></div>
                                 </div>
                             </div>
                         </div>
@@ -195,9 +185,7 @@
                             </div>
                             <div class="roomsbox-shen-text-bottom">
                                 <span class="text-hidden">本房型為 <b>獨棟別墅</b> <br>室內坪數 <b>50</b> 坪，室外約 <b>150</b> 坪</span>
-                                <img src="{{asset('/img/booking/room7-arrow-white.svg')}}" alt="屏東-恆春民宿-前往森七和風館">
-                                <img src="{{asset('/img/booking/room7-arrow-black.svg')}}" alt="屏東-恆春民宿-前往森七和風館"
-                                    class="bottom-img-right" hidden>
+                                <div class="roomsbox-shen-right-arrow"></div>
                             </div>
                         </div>
                     </a>

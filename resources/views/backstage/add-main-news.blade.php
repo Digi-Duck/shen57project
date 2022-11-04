@@ -23,17 +23,17 @@
             <form action="/admin/addmainnews" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="add-title">
-                    <label for="date">時間<span class="memo-span">(必填)</span></label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )" required>
+                    <label for="date">時間<span class="memo-span red">(必填)</span></label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )" required>
                 </div>
                 <div class="add-title">
-                    <label for="title">標題<span class="memo-span">(必填)</span></label><input type="text" name="title" id="title" placeholder="請輸入標題" required>
+                    <label for="title">標題<span class="memo-span red">(必填)</span></label><input type="text" name="title" id="title" placeholder="請輸入標題" required>
                 </div>
                 <div class="add-title">
-                    <label for="title">上傳圖片<span class="memo-span">(必填，建議尺寸為600*600px, 72dpi)</span></label><input type="file"
+                    <label for="title">上傳圖片<span class="memo-span"><span class="red">(必填)</span>建議尺寸為600*600px, 72dpi</span></label><input type="file"
                         accept="image/png, image/jpeg, image/jpg" name="img" id="img" required>
                 </div>
                 <div class="add-content">
-                    <label for="index-content">簡要內容<span class="memo-span">(必填)請輸入五行以內文字</span></label>
+                    <label for="index-content">簡要內容<span class="memo-span"><span class="red">(必填)</span>請輸入五行以內文字</span></label>
                     <textarea id="summernote" name="content1" id="index-content" required>
                     </textarea>
                     <script>
@@ -53,7 +53,7 @@
                             $('#summernote').summernote('code', '');
                         });
                     </script>
-                    <label for="news-content">詳細內容<span class="memo-span">(必填)可輸入任意行數</span></label>
+                    <label for="news-content">詳細內容<span class="memo-span"><span class="red">(必填)</span>可輸入任意行數</span></label>
                     <textarea id="summernote2" name="content2" id="news-content" required>
                     </textarea>
                     <script>

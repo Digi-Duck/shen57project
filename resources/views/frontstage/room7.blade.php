@@ -162,9 +162,7 @@
                     </div>
                     <div class="r-rooms-shen-text-bottom">
                         <span>本房型為 <b>獨棟別墅</b><br>室內坪數 <b>50</b> 坪，室外約 <b>150</b> 坪</span>
-                        <img src="{{ asset('/img/rooms/room5-arrow-white.svg') }}" alt="森5 / 時尚館">
-                        <img src="{{ asset('/img/rooms/room5-arrow-black.svg') }}" alt="森5 / 時尚館" class="bottom-img"
-                            hidden>
+                        <div class="r-rooms-shen-arrow"></div>
                     </div>
                 </div>
             </a>

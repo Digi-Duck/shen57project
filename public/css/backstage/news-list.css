@@ -129,7 +129,7 @@ textarea {
   color: var(--darkModeBlack, #26292c);
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
 }
 .news-list .main-news-list .main-news-box .info-box .title h5 {
   font-size: 17px;
@@ -146,7 +146,7 @@ textarea {
   width: 100%;
   padding: 10px 0 0;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: start;
 }
 .news-list .main-news-list .btnArea a {
