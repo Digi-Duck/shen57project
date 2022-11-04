@@ -276,13 +276,14 @@
 @endsection
 
 @section('js')
+
     <link rel="stylesheet" href="{{asset('js/aos/aos.css')}}">
     <script src="{{asset('js/aos/aos.js')}}"></script>
     <script src="{{asset('js/index.js')}}"></script>
     <script>
         AOS.init({
             easing: 'ease-in-out-sine',
-            offset: 200,
+            offset: 100,
             duration: 1000,
             once: true,
         });

@@ -39,6 +39,7 @@ scrollBtn.addEventListener('click', function (e) {
 let idxHeader = document.querySelector('header');
 let idxSection = document.querySelector('#index');
 
+
 if (window.innerWidth <= 468) {
     idxHeader.style.top = '0px'
 } else {
