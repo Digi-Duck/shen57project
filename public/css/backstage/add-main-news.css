@@ -149,3 +149,10 @@ textarea {
 .add-news .btnArea button:hover {
   background: var(--darkModeBlack, #26292c);
 }/*# sourceMappingURL=add-main-news.css.map */
+
+.memo-span{
+    font-size: 13px;
+    color: var(--darkModeDarkBrown, #767067);
+    margin-left: 10px;
+    font-weight: 400;
+}

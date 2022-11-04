@@ -45,7 +45,15 @@
                         $(document).ready(function() {
                             $('#summernote').summernote({
                                 height: 100,
+                                toolbar: [
+                                    // [groupName, [list of button]]
+                                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                                    ['para', ['ul', 'ol']],
+                                    ['height', ['height']]
+                                ]
                             });
+
                         });
                     </script>
                     <label for="news-content">詳細內容</label>
@@ -56,6 +64,13 @@
                         $(document).ready(function() {
                             $('#summernote2').summernote({
                                 height: 300,
+                                toolbar: [
+                                    // [groupName, [list of button]]
+                                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                                    ['para', ['ul', 'ol']],
+                                    ['height', ['height']]
+                                ]
                             });
 
                         });

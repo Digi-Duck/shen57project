@@ -23,18 +23,18 @@
             <form action="/admin/addmainnews" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="add-title">
-                    <label for="date">時間</label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )">
+                    <label for="date">時間<span class="memo-span">(必填)</span></label><input type="text" name="date" id="date" placeholder="請輸入時間 ( 格式範例 2022 / 10 / 31 Tue )" required>
                 </div>
                 <div class="add-title">
-                    <label for="title">標題</label><input type="text" name="title" id="title" placeholder="請輸入標題">
+                    <label for="title">標題<span class="memo-span">(必填)</span></label><input type="text" name="title" id="title" placeholder="請輸入標題" required>
                 </div>
                 <div class="add-title">
-                    <label for="title">上傳圖片<span>(建議尺寸為600*600px, 72dpi)</span></label><input type="file"
-                        accept="image/png, image/jpeg, image/jpg" name="img" id="img">
+                    <label for="title">上傳圖片<span class="memo-span">(必填，建議尺寸為600*600px, 72dpi)</span></label><input type="file"
+                        accept="image/png, image/jpeg, image/jpg" name="img" id="img" required>
                 </div>
                 <div class="add-content">
-                    <label for="index-content">簡要內容</label>
-                    <textarea id="summernote" name="content1" id="index-content">
+                    <label for="index-content">簡要內容<span class="memo-span">(必填)請輸入五行以內文字</span></label>
+                    <textarea id="summernote" name="content1" id="index-content" required>
                     </textarea>
                     <script>
                         $(document).ready(function() {
@@ -46,17 +46,15 @@
                                     // [groupName, [list of button]]
                                     ['style', ['bold', 'italic', 'underline', 'clear']],
                                     ['font', ['strikethrough', 'superscript', 'subscript']],
-                                    ['fontsize', ['fontsize']],
-                                    ['color', ['color']],
-                                    ['para', ['ul', 'ol', 'paragraph']],
+                                    ['para', ['ul', 'ol']],
                                     ['height', ['height']]
                                 ]
                             });
                             $('#summernote').summernote('code', '');
                         });
                     </script>
-                    <label for="news-content">詳細內容</label>
-                    <textarea id="summernote2" name="content2" id="news-content">
+                    <label for="news-content">詳細內容<span class="memo-span">(必填)可輸入任意行數</span></label>
+                    <textarea id="summernote2" name="content2" id="news-content" required>
                     </textarea>
                     <script>
                         $(document).ready(function() {
@@ -68,9 +66,7 @@
                                     // [groupName, [list of button]]
                                     ['style', ['bold', 'italic', 'underline', 'clear']],
                                     ['font', ['strikethrough', 'superscript', 'subscript']],
-                                    ['fontsize', ['fontsize']],
-                                    ['color', ['color']],
-                                    ['para', ['ul', 'ol', 'paragraph']],
+                                    ['para', ['ul', 'ol']],
                                     ['height', ['height']]
                                 ]
                             });
