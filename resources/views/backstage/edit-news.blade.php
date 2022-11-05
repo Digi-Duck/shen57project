@@ -39,7 +39,7 @@
                         accept="image/png, image/jpeg, image/jpg" name="img" id="img">
                 </div>
                 <div class="add-content">
-                    <label for="main-news-content">內容</label>
+                    <label for="main-news-content">內容<span>(可輸入任意行數)</span></label>
                     <textarea id="summernote2" name="content" id="news-content">
 
                     {{ $editnews->content }}

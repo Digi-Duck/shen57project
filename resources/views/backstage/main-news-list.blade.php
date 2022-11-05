@@ -14,7 +14,7 @@
     <main class="news-list">
         <div class="title">
             <div>主要消息 / 管理消息</div>
-            <span class="note-title">! 注意 ! </span> <span class="note-content">主要消息在頁面上只會出現最新的一則，其餘主要消息不會顯示</span>
+            <span class="note-title">! 注意 ! </span> <span class="note-content">主要消息在首頁上只會出現選定的那則消息，其餘主要消息不會顯示</span>
         </div>
 
 
@@ -43,10 +43,15 @@
                 </div>
 
                 <div class="btnArea">
-                    <label for="showonindex{{ $item->id }}">
+                    {{-- <label for="showonindex{{ $item->id }}">
                         <input type="radio" name="showonindex" id="showonindex{{ $item->id }}" class="show-content" @if($show) checked @endif onchange="changeShow()">
                         <span class="show-content">首頁顯示此則消息</span>
-                    </label>
+                    </label> --}}
+                    @if($show)
+                    <span class="show-content red">首頁目前顯示此則主要消息</span>
+                    @else
+                    <span class="show-content"></span>
+                    @endif
                     <div>
                         <a href="/admin/main-edit/{{ $item->id }}" class="editBtn">編輯</a>
                         <button type="button" class="deleteBtn" data-bs-toggle="modal"
@@ -89,7 +94,7 @@
 
     <script>
         function changeShow(){
-            
+
         }
     </script>
 @endsection
