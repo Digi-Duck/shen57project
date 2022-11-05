@@ -194,12 +194,13 @@ body {
                         min-width: 81px;
 
                         @include pad{
-                            margin-right: 0;
+                            margin-right: 45px;
                         }
 
                         @include phone {
                             font-size: $phoneH5;
                             min-width: 58px;
+                            margin-right: 10px;
                         }
                     }
 
@@ -280,7 +281,7 @@ body {
 
                     @include phone {
                         font-size: $phoneH5;
-                        margin-right: 25px;
+                        margin-right: 10px;
                         min-width: 58px;
                         margin-top: 20px;
                     }
@@ -342,10 +343,6 @@ body {
     @include flex(flex-start, center);
     flex-direction: column;
 
-    @media (max-width: 900px) {
-        pointer-events: none;
-    }
-
     @include phone {
         padding: 35px 0 0;
     }
@@ -356,7 +353,7 @@ body {
         margin-bottom: 45px;
 
         @include phone {
-            margin-bottom: 25px;
+            margin-bottom: 10px;
         }
 
         //標題
@@ -367,10 +364,11 @@ body {
             margin-right: 45px;
 
             @include w900{
-                margin-right: 0;
+                margin-right: 30px;
             }
             @include phone {
                 font-size: $phoneH5;
+                margin-right: 10px;
             }
         }
 
@@ -380,10 +378,6 @@ body {
             font-size: $webH5;
             font-weight: 500;
 
-            @media (max-width: 900px) {
-                display: none;
-            }
-
             @include phone {
                 font-size: $phoneH5;
             }
@@ -392,10 +386,11 @@ body {
 
     //旅遊地圖本體
     .travel-map {
-        width: 650px;
+        width: 750px;
 
-        @media (max-width: 700px) {
+        @media (max-width: 780px) {
             width: 100%;
+            max-width: unset;
         }
 
     }

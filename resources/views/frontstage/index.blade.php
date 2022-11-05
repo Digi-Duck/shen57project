@@ -185,8 +185,10 @@
                             <div class="news-title-text">​最新消息•活動訊息•優惠專案</div>
                         </div>
                         <div class="news-content">
-                            <div class="news-date">{{$mainnews[0]->date}}</div>
-                            <div class="news-name">{{$mainnews[0]->title}}</div>
+                            <div>
+                                <div class="news-date">{{$mainnews[0]->date}}</div>
+                                <div class="news-name">{{$mainnews[0]->title}}</div>
+                            </div>
                             <div class="news-intro">
                                 {!!$mainnews[0]->content!!}
                             </div>

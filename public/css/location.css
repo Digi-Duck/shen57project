@@ -366,7 +366,7 @@ body {
 
 @media (max-width: 768px) {
   #location .location-info-container .info-map-box .info-area-top .info-inside-box .info-title {
-    margin-right: 0;
+    margin-right: 45px;
   }
 }
 
@@ -374,6 +374,7 @@ body {
   #location .location-info-container .info-map-box .info-area-top .info-inside-box .info-title {
     font-size: 14px;
     min-width: 58px;
+    margin-right: 10px;
   }
 }
 
@@ -491,7 +492,7 @@ body {
 @media (max-width: 468px) {
   #location .location-info-container .info-map-box .info-inside-lastbox .info-title {
     font-size: 14px;
-    margin-right: 25px;
+    margin-right: 10px;
     min-width: 58px;
     margin-top: 20px;
   }
@@ -565,12 +566,6 @@ body {
           flex-direction: column;
 }
 
-@media (max-width: 900px) {
-  .travel-map-area {
-    pointer-events: none;
-  }
-}
-
 @media (max-width: 468px) {
   .travel-map-area {
     padding: 35px 0 0;
@@ -592,7 +587,7 @@ body {
 
 @media (max-width: 468px) {
   .travel-map-area .info-inside-box {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 }
 
@@ -605,13 +600,14 @@ body {
 
 @media (max-width: 900px) {
   .travel-map-area .info-inside-box .info-title {
-    margin-right: 0;
+    margin-right: 30px;
   }
 }
 
 @media (max-width: 468px) {
   .travel-map-area .info-inside-box .info-title {
     font-size: 14px;
+    margin-right: 10px;
   }
 }
 
@@ -621,12 +617,6 @@ body {
   font-weight: 500;
 }
 
-@media (max-width: 900px) {
-  .travel-map-area .info-inside-box .info-content {
-    display: none;
-  }
-}
-
 @media (max-width: 468px) {
   .travel-map-area .info-inside-box .info-content {
     font-size: 14px;
@@ -634,12 +624,13 @@ body {
 }
 
 .travel-map-area .travel-map {
-  width: 650px;
+  width: 750px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .travel-map-area .travel-map {
     width: 100%;
+    max-width: unset;
   }
 }
 

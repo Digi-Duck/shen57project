@@ -25,6 +25,7 @@
                 </a>
             </ul>
         </div>
+
         <!-- 頁首-隱藏盒子 -->
         <div class="header-ham">
             <div class="header-dark-btn"></div>
@@ -47,7 +48,7 @@
                                         <a href="/news">
                                             <li>訊 News<span>˙</span></li>
                                         </a>
-                                        <a href="/room5">
+                                        <a onclick="openrooms()">
                                             <li>宿 Rooms<span>˙</span></li>
                                         </a>
                                         <a href="/booking">
@@ -107,7 +108,7 @@
                                 </div>
                             </div>
                             <!-- hambox-shen57房型 -->
-                            <div class="hambox-rooms">
+                            {{-- <div class="hambox-rooms">
                                 <div class="hambox-bottom-rooms">
                                     <a href="room5" class="hambox-rooms-shen5">
                                         <div class="hambox-shen-text">
@@ -118,7 +119,7 @@
                                             <div class="hambox-shen-text-bottom">
                                                 <span class="text-hidden">本房型為 <b>獨棟別墅</b> <br>室內坪數 <b>50</b> 坪，室外約
                                                     <b>150</b> 坪</span>
-                                                    <div class="hambox-shen-left-arrow"></div>
+                                                <div class="hambox-shen-left-arrow"></div>
                                             </div>
                                         </div>
                                     </a>
@@ -131,12 +132,12 @@
                                             <div class="hambox-shen-text-bottom">
                                                 <span class="text-hidden">本房型為 <b>獨棟別墅</b> <br>室內坪數 <b>50</b> 坪，室外約
                                                     <b>150</b> 坪</span>
-                                                    <div class="hambox-shen-right-arrow"></div>
+                                                <div class="hambox-shen-right-arrow"></div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -148,7 +149,7 @@
         <div class="rooms-menu">
             <div class="rooms-info">
                 <div class="rooms-info-box">
-                    <img src="{{asset('/img/header/rooms.svg')}}" alt="">
+                    <img src="{{ asset('/img/header/rooms.svg') }}" alt="">
                     <div class="rooms-info-text">
                         <p>
                             <span>將手輕輕撫在耳邊，聆聽貝殼捎來的私密話語，溫暖的白砂，調皮地搔弄我的腳底，</span>

@@ -243,6 +243,7 @@ header{
                 cursor: pointer;
               }
               a{
+                cursor: pointer;
                 @include pad{
                   &:last-child{
                     li{
