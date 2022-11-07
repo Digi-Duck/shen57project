@@ -32,11 +32,6 @@
                 <div class="info-map-box">
                     <!-- 地圖區域 -->
                     <div class="map-area">
-                        <!-- google map ver -->
-                        <!-- <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.4974692301416!2d120.7287095148195!3d21.953862460929127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b06958c62623%3A0x8162d4b1173957dd!2z5qOu5LqU5LiD6KGM6aSo!5e0!3m2!1szh-TW!2stw!4v1666793115966!5m2!1szh-TW!2stw"
-                                    width="455" height="435" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                         <img src="{{ asset('img/location/index-location-cover-phone.jpg') }}" alt="">
                     </div>
                     <!-- 行館資訊 -->
