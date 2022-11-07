@@ -1007,12 +1007,19 @@ header {
   font-weight: 700;
   color: var(--darkModeDarkGreen, #334c3f);
   letter-spacing: 0.05em;
+  padding-right: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
 }
 
 @media (max-width: 468px) and (max-width: 468px) {
   #index .news-name {
     font-size: 17px;
     padding: 0 10px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1035,7 +1042,7 @@ header {
     height: auto;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     padding-right: 30px;
   }
 }
@@ -1044,20 +1051,21 @@ header {
   #index .news-intro {
     margin-top: 30px;
     margin-bottom: 15px;
+    padding-right: 0;
   }
 }
 
 @media (max-width: 468px) and (max-width: 468px) {
   #index .news-intro {
     font-size: 14px;
-    padding-right: 10px;
+    padding: 0 10px;
     margin-top: 5px;
     margin-bottom: 0;
   }
 }
 
 #index .news-intro p {
-  margin: 0px 10px;
+  margin: 0;
 }
 
 #index .news-content-pic {
@@ -1119,7 +1127,7 @@ header {
 
 @media (max-width: 468px) and (max-width: 468px) {
   #index .news-content {
-    margin-left: 10px;
+    margin-left: 0px;
     width: 100%;
     padding: 0 10px;
   }

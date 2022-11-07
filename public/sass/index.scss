@@ -836,11 +836,18 @@ header {
     font-weight: 700;
     color: var(--darkModeDarkGreen, $shen57DarkGreen);
     letter-spacing: 0.05em;
+    padding-right: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
 
     @include phone {
       @media (max-width:468px) {
         font-size: $phoneH4;
         padding: 0 10px;
+        margin-bottom: 15px;
       }
     }
   }
@@ -863,25 +870,26 @@ header {
         height: auto;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 5;
         padding-right: 30px;
       }
     }
     @include pad{
         margin-top: 30px;
         margin-bottom: 15px;
+        padding-right: 0;
     }
     @include phone {
       @media (max-width:468px) {
         font-size: $phoneH6;
-        padding-right: 10px;
+        padding:0 10px;
         margin-top: 5px;
         margin-bottom: 0;
       }
     }
 
     p{
-        margin: 0px 10px;
+        margin: 0;
     }
   }
 
@@ -932,7 +940,7 @@ header {
 
     @include phone {
       @media (max-width:468px) {
-        margin-left: 10px;
+        margin-left: 0px;
         width: 100%;
         padding: 0 10px;
       }

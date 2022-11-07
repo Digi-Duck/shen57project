@@ -1,19 +1,20 @@
 @extends('frontstage.template')
 
 @section('meta')
-<meta property="og:url" content="https://wangch15.github.io/shen57web/">
-<meta property="og:image" content="https://wangch15.github.io/shen57web/img/index/banner.jpg">
-<meta property="og:description" content="來自無期而遇的歸宿，它就像是走在炙熱沙漠中，意外現身的一片森林，給予驚喜和轉折；又像是在下一個轉角處，突如其來遇見的幸福，這個家不是別人，它是「森・五七行館」。">
-<meta property="og:title" content="森五七行館 / 墾丁民宿、四人包棟">
+    <meta property="og:url" content="https://wangch15.github.io/shen57web/">
+    <meta property="og:image" content="https://wangch15.github.io/shen57web/img/index/banner.jpg">
+    <meta property="og:description"
+        content="來自無期而遇的歸宿，它就像是走在炙熱沙漠中，意外現身的一片森林，給予驚喜和轉折；又像是在下一個轉角處，突如其來遇見的幸福，這個家不是別人，它是「森・五七行館」。">
+    <meta property="og:title" content="森五七行館 / 墾丁民宿、四人包棟">
 @endsection
 
 @section('title')
-森五七行館
+    森五七行館
 @endsection
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('/css/intro.css') }}">
-<link rel="stylesheet" href="{{ asset('/css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/intro.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/index.css') }}">
 @endsection
 
 @section('main')
@@ -28,7 +29,7 @@
                             <title>intro-shen57-logo</title>
                             <g id="圖層_1" data-name="圖層 1">
                                 <path
-                                    d="M50.72,8.69a1.51,1.51,0,1,0-.49-3L27.5,5.78V1.27a1.52,1.52,0,0,0-3,0V5.82L1.77,5.89a1.35,1.35,0,0,0-.49,0,1.51,1.51,0,1,0,.49,3l20.58-.06-9.54,9.53-12,12a1.5,1.5,0,0,0-.45,1.08A1.52,1.52,0,0,0,1.86,33h8.46L.82,42.44A1.47,1.47,0,0,0,.37,43.5a1.44,1.44,0,0,0,.45,1.07A1.48,1.48,0,0,0,1.89,45,1.52,1.52,0,0,0,3,44.57l9.49-9.46.1,20.39a1.5,1.5,0,0,0,.94,1.39,1.56,1.56,0,0,0,.57.11,1.49,1.49,0,0,0,1.11-.45l11-11,11,11a1.44,1.44,0,0,0,1.07.44,1.62,1.62,0,0,0,.58-.11,1.5,1.5,0,0,0,.93-1.4L39.75,35l9.56,9.43a1.45,1.45,0,0,0,1.08.44,1.43,1.43,0,0,0,1.46-1.6,1.49,1.49,0,0,0-.45-1.07l-9.55-9.42H50.3a1.54,1.54,0,0,0,1.06-.44,1.51,1.51,0,0,0,0-2.14L29.65,8.76l20.58-.07A1.35,1.35,0,0,0,50.72,8.69ZM5.52,30l6.88-6.88,0,6.86Zm41.15-.13-6.94,0,0-6.89ZM15.42,20.05,24.52,11l.06,18.93-9.12,0Zm.13,31.8L15.48,35,24,43.43ZM26.13,41.3l-8.47-8.37,16.9,0ZM36.77,51.78l-8.48-8.36L36.72,35ZM36.67,20l0,9.9-9.09,0L27.55,11Z') }}">
+                                    d="M50.72,8.69a1.51,1.51,0,1,0-.49-3L27.5,5.78V1.27a1.52,1.52,0,0,0-3,0V5.82L1.77,5.89a1.35,1.35,0,0,0-.49,0,1.51,1.51,0,1,0,.49,3l20.58-.06-9.54,9.53-12,12a1.5,1.5,0,0,0-.45,1.08A1.52,1.52,0,0,0,1.86,33h8.46L.82,42.44A1.47,1.47,0,0,0,.37,43.5a1.44,1.44,0,0,0,.45,1.07A1.48,1.48,0,0,0,1.89,45,1.52,1.52,0,0,0,3,44.57l9.49-9.46.1,20.39a1.5,1.5,0,0,0,.94,1.39,1.56,1.56,0,0,0,.57.11,1.49,1.49,0,0,0,1.11-.45l11-11,11,11a1.44,1.44,0,0,0,1.07.44,1.62,1.62,0,0,0,.58-.11,1.5,1.5,0,0,0,.93-1.4L39.75,35l9.56,9.43a1.45,1.45,0,0,0,1.08.44,1.43,1.43,0,0,0,1.46-1.6,1.49,1.49,0,0,0-.45-1.07l-9.55-9.42H50.3a1.54,1.54,0,0,0,1.06-.44,1.51,1.51,0,0,0,0-2.14L29.65,8.76l20.58-.07A1.35,1.35,0,0,0,50.72,8.69ZM5.52,30l6.88-6.88,0,6.86Zm41.15-.13-6.94,0,0-6.89ZM15.42,20.05,24.52,11l.06,18.93-9.12,0Zm.13,31.8L15.48,35,24,43.43ZM26.13,41.3l-8.47-8.37,16.9,0ZM36.77,51.78l-8.48-8.36L36.72,35ZM36.67,20l0,9.9-9.09,0L27.55,11Z" />
                             </g>
                         </svg>
                     </div>
@@ -193,11 +194,11 @@
                         </div>
                         <div class="news-content">
                             <div>
-                                <div class="news-date">{{$mainnews[0]->date}}</div>
-                                <div class="news-name">{{$mainnews[0]->title}}</div>
+                                <div class="news-date">{{ $mainnews[0]->date }}</div>
+                                <div class="news-name">{{ $mainnews[0]->title }}</div>
                             </div>
                             <div class="news-intro">
-                                {!!$mainnews[0]->content!!}
+                                {!! $mainnews[0]->content !!}
                             </div>
                             <a href="/news" class="more-btn news-more-btn">查看更多</a>
                         </div>
@@ -250,7 +251,8 @@
                                     <div class="info-title">行館地址</div>
                                     <div class="info-text info-text-map">
                                         946 屏東縣恆春鎮大光里砂尾路68-2號
-                                        <a href="https://goo.gl/maps/bhtTUXBBiVBUe52m9" class="info-map-link" target="_blank"><span>開始</span>導航</a>
+                                        <a href="https://goo.gl/maps/bhtTUXBBiVBUe52m9" class="info-map-link"
+                                            target="_blank"><span>開始</span>導航</a>
                                     </div>
                                 </div>
                                 <div class="location-info">
@@ -277,7 +279,8 @@
                         </div>
                     </div>
                     <div class="location-info-pic">
-                        <img srcset="/img/index/map@1x.png 1x,/img/index/map@2x.png 2x" src="{{ asset('/img/index/map@1x.png') }}" alt="">
+                        <img srcset="/img/index/map@1x.png 1x,/img/index/map@2x.png 2x"
+                            src="{{ asset('/img/index/map@1x.png') }}" alt="">
                     </div>
                 </div>
         </section>
@@ -285,10 +288,9 @@
 @endsection
 
 @section('js')
-
-    <link rel="stylesheet" href="{{asset('js/aos/aos.css')}}">
-    <script src="{{asset('js/aos/aos.js')}}"></script>
-    <script src="{{asset('js/index.js')}}"></script>
+    <link rel="stylesheet" href="{{ asset('js/aos/aos.css') }}">
+    <script src="{{ asset('js/aos/aos.js') }}"></script>
+    <script src="{{ asset('js/index.js') }}"></script>
     <script>
         AOS.init({
             easing: 'ease-in-out-sine',
