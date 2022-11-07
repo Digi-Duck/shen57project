@@ -1618,6 +1618,13 @@ header {
   }
 }
 
+@media (max-width: 468px) {
+  #rooms-box .rooms-menu .roomsbox-rooms .roomsbox-bottom-rooms .roomsbox-rooms-shen5 .roomsbox-shen-text .roomsbox-shen-text-bottom .text-hidden,
+  #rooms-box .rooms-menu .roomsbox-rooms .roomsbox-bottom-rooms .roomsbox-rooms-shen7 .roomsbox-shen-text .roomsbox-shen-text-bottom .text-hidden {
+    display: none;
+  }
+}
+
 #rooms-box .rooms-menu .roomsbox-rooms .roomsbox-bottom-rooms .roomsbox-rooms-shen5 .roomsbox-shen-text .text-hidden,
 #rooms-box .rooms-menu .roomsbox-rooms .roomsbox-bottom-rooms .roomsbox-rooms-shen7 .roomsbox-shen-text .text-hidden {
   display: none;

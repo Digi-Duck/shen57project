@@ -863,6 +863,9 @@ header{
                 @include headerpad{
                   display: block;
                 }
+                @include phone{
+                    display: none;
+                }
               }
             }
             .text-hidden{
