@@ -27,12 +27,12 @@
                     <img src="{{ $editnews->img_path }}" alt="">
                 </div>
                 <div class="add-title">
-                    <label for="date">時間</label><input type="text" name="date" id="date"
-                        value="{{ $editnews->date }}">
+                    <label for="date">時間</label>
+                    <input type="text" name="date" id="date" value="{{ $editnews->date }}" required>
                 </div>
                 <div class="add-title">
-                    <label for="title">標題</label><input type="text" name="title" id="title"
-                        value="{{ $editnews->title }}">
+                    <label for="title">標題</label>
+                    <input type="text" name="title" id="title" value="{{ $editnews->title }}" required>
                 </div>
                 <div class="add-title">
                     <label for="title">重新上傳圖片<span>(建議尺寸為600*600px, 72dpi)</span></label><input type="file"
@@ -40,7 +40,7 @@
                 </div>
                 <div class="add-content">
                     <label for="index-content">簡要內容<span>(建議行數 5 行以內)</span></label>
-                    <textarea id="summernote" name="content1" id="index-content" placeholder="請輸入簡要內容 ( 此區塊內容會出現在首頁，建議內容不超過5行 )">
+                    <textarea id="summernote" name="content1" id="index-content" placeholder="請輸入簡要內容 ( 此區塊內容會出現在首頁，建議內容不超過5行 )" required>
                     {{ $editnews->content }}
                     </textarea>
                     <script>
@@ -59,7 +59,7 @@
                         });
                     </script>
                     <label for="news-content">詳細內容<span>(可輸入任意行數)</span></label>
-                    <textarea id="summernote2" name="content2" id="news-content" placeholder="請輸入詳細內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )">
+                    <textarea id="summernote2" name="content2" id="news-content" placeholder="請輸入詳細內容 ( 此區塊內容會出現在詳細頁，可輸入任意行數內文 )" required>
                     {{ $editnews->content2 }}
                     </textarea>
                     <script>
@@ -80,15 +80,23 @@
                 </div>
 
                 <?php
-                $show = $editnews->show
+                $show = $editnews->show;
+                $hidden = $editnews->hidden;
                 ?>
 
 
                 <div class="btnArea">
-                    <label for="showonindex{{ $editnews->id }}">
-                        <input type="radio" name="showonindex" id="showonindex{{ $editnews->id }}" class="show-content" @if ($show) checked @endif onchange="changeShow()">
-                        <span class="show-content">首頁顯示此則消息</span>
-                    </label>
+                    <div>
+                        <label for="showonindex{{ $editnews->id }}">
+                            <input type="checkbox" name="showonindex" id="showonindex{{ $editnews->id }}" class="show-content" @if ($show) checked @endif>
+                            <span class="show-content">首頁顯示此則消息</span>
+                        </label>
+                        &emsp;
+                        <label for="hidden{{ $editnews->id }}">
+                            <input type="checkbox" name="hidden" id="hidden{{ $editnews->id }}" class="show-content" @if ($hidden) checked @endif>
+                            <span class="show-content">隱藏</span>
+                        </label>
+                    </div>
                     <div>
                         <button type="submit">確定更改</button>
                         <a href="/admin/main-news-list">取消</a>

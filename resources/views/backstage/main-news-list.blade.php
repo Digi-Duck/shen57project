@@ -20,10 +20,10 @@
 
         <!-- 套版用start -->
         @foreach ($newslist as $item)
-
-        <?php
-        $show = $item->show
-        ?>
+            <?php
+            $show = $item->show;
+            $hidden = $item->hidden;
+            ?>
             <section class="main-news-list">
                 <div class="main-news-box">
                     <img src="{{ $item->img_path }}" alt="">
@@ -44,14 +44,23 @@
 
                 <div class="btnArea">
                     {{-- <label for="showonindex{{ $item->id }}">
-                        <input type="radio" name="showonindex" id="showonindex{{ $item->id }}" class="show-content" @if($show) checked @endif onchange="changeShow()">
+                        <input type="radio" name="showonindex" id="showonindex{{ $item->id }}" class="show-content" @if ($show) checked @endif onchange="changeShow()">
                         <span class="show-content">首頁顯示此則消息</span>
                     </label> --}}
-                    @if($show)
-                    <span class="show-content red">首頁目前顯示此則主要消息</span>
-                    @else
-                    <span class="show-content"></span>
-                    @endif
+                    <div>
+                        @if ($show)
+                            <span class="show-content red">首頁目前為此則主要消息</span>
+                        @else
+                            <span class="show-content">可在編輯中將此消息設定於首頁出現</span>
+                        @endif
+                        <span class="show-content"> / </span>
+                        @if(!$hidden)
+                            <span class="show-content">顯示</span>
+                        @else
+                            <span class="show-content blue">隱藏</span>
+                        @endif
+                    </div>
+
                     <div>
                         <a href="/admin/main-edit/{{ $item->id }}" class="editBtn">編輯</a>
                         <button type="button" class="deleteBtn" data-bs-toggle="modal"
@@ -93,7 +102,7 @@
     </script>
 
     <script>
-        function changeShow(){
+        function changeShow() {
 
         }
     </script>

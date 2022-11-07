@@ -25,5 +25,5 @@ class Mainnews extends Model
     /**
      * @var array
      */
-    protected $fillable = ['created_at', 'updated_at', 'title', 'content', 'img_path', 'date','content2','show'];
+    protected $fillable = ['created_at', 'updated_at', 'title', 'content', 'img_path', 'date','content2','show','hidden'];
 }

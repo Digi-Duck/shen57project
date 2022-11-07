@@ -214,11 +214,16 @@ font-size: 15px;
 
 .news-list .main-news-list .btnArea .show-content{
     color: var(--darkModeGray, #767676);
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .red{
     color: rgb(168, 45, 45) !important;
+    font-weight: 700 !important;
+    font-size: 17px !important;
 }
 
+.blue{
+    color: rgb(51, 124, 172) !important;
+}

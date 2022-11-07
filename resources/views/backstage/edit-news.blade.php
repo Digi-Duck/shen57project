@@ -28,11 +28,11 @@
                 </div>
                 <div class="add-title">
                     <label for="date">時間</label><input type="text" name="date" id="date"
-                        value="{{ $editnews->date }}">
+                        value="{{ $editnews->date }}" required>
                 </div>
                 <div class="add-title">
                     <label for="title">標題</label><input type="text" name="title" id="title"
-                        value="{{ $editnews->title }}">
+                        value="{{ $editnews->title }}" required>
                 </div>
                 <div class="add-title">
                     <label for="title">重新上傳圖片<span>(建議尺寸為600*600px, 72dpi)</span></label><input type="file"
@@ -40,7 +40,7 @@
                 </div>
                 <div class="add-content">
                     <label for="main-news-content">內容<span>(可輸入任意行數)</span></label>
-                    <textarea id="summernote2" name="content" id="news-content">
+                    <textarea id="summernote2" name="content" id="news-content" required>
 
                     {{ $editnews->content }}
 
@@ -60,9 +60,20 @@
                         });
                     </script>
                 </div>
+                <?php
+                $hidden = $editnews->hidden;
+                ?>
                 <div class="btnArea">
-                    <button type="submit">確定更改</button>
-                    <a href="/admin/news-list">取消</a>
+                    <div>
+                        <label for="hidden{{ $editnews->id }}">
+                            <input type="checkbox" name="hidden" id="hidden{{ $editnews->id }}" class="show-content" @if ($hidden) checked @endif>
+                            <span class="show-content">隱藏</span>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">確定更改</button>
+                        <a href="/admin/news-list">取消</a>
+                    </div>
                 </div>
             </form>
         </section>

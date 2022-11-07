@@ -99,6 +99,15 @@ class BackStageController extends Controller
             $editone->img_path = $path;
         }
 
+        //隱藏打勾,把值改為true or false
+        $hidden = $request->hidden;
+        if($hidden == 'on'){
+            $hidden = 1;
+        }else{
+            $hidden = 0;
+        }
+        $editone->hidden = $hidden;
+
         $editone->save();
 
         return redirect('/admin/news-list');
@@ -111,6 +120,7 @@ class BackStageController extends Controller
     }
 
     public function maineditchecked(Request $request,$id){
+
         $title = $request->title;
         $date = $request->date;
         $content1 = $request->content1;
@@ -122,13 +132,44 @@ class BackStageController extends Controller
         $editone->date = $date;
         $editone->content = $content1;
         $editone->content2 = $content2;
-        $imgold = $editone->img_path;
 
+        //如果有上傳新圖片，將舊的圖片從主機上刪除，並上傳新圖片
+        $imgold = $editone->img_path;
         if(!$img == null || !$img == '' ){
             FilesController::deleteUpload($imgold);
             $path = FilesController::imgUpload($img, '/mainnews');
             $editone->img_path = $path;
         }
+
+        //如果有打勾首頁選擇此消息,把值改為true or false
+        $show = $request->showonindex;
+        if($show == 'on'){
+            $show = 1;
+        }else{
+            $show = 0;
+        }
+
+
+        $editAll = Mainnews::get();
+        if($show == 1){
+            //把所有資料庫的東西都先取消顯示並儲存，再把當前那一筆改為顯示在首頁
+            foreach ($editAll as $item) {
+                $item->show = 0;
+                $item->save();
+            }
+            $editone->show = $show;
+        }else if($show == 0){
+            $editone->show = $show;
+        }
+
+        //隱藏打勾,把值改為true or false
+        $hidden = $request->hidden;
+        if($hidden == 'on'){
+            $hidden = 1;
+        }else{
+            $hidden = 0;
+        }
+        $editone->hidden = $hidden;
 
         $editone->save();
 
