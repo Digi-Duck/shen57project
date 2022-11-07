@@ -1,5 +1,12 @@
 @extends('frontstage.template')
 
+@section('meta')
+<meta property="og:url" content="https://wangch15.github.io/shen57web/location">
+<meta property="og:image" content="https://wangch15.github.io/shen57web/img/index/banner.jpg">
+<meta property="og:description" content="行館資訊、交通指引、旅遊地圖">
+<meta property="og:title" content="森五七行館 / 行館資訊，旅遊地圖">
+@endsection
+
 @section('title')
     森五七行館 - 行 Location
 @endsection

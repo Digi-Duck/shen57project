@@ -107,7 +107,6 @@ window.addEventListener('load', function () {
 
 window.onresize = function () {
     let ww = window.innerWidth
-    let swiperSet = swiper.passedParams
     const slideSpanLoad = document.querySelectorAll('.swiper-slide>span')
     if(ww<769){
         slideSpanLoad.forEach(e=>{

@@ -1,5 +1,12 @@
 @extends('frontstage.template')
 
+@section('meta')
+<meta property="og:url" content="https://wangch15.github.io/shen57web/room5">
+<meta property="og:image" content="https://wangch15.github.io/shen57web/img/index/banner.jpg">
+<meta property="og:description" content="森5 - 時尚館房型資訊">
+<meta property="og:title" content="森五七行館 / 時尚館">
+@endsection
+
 @section('title')
 森五七行館 - 時尚館 room5
 @endsection
@@ -182,5 +189,5 @@
 
 @section('js')
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-   <script src="{{asset('/js/room.js')}}"></script>
+   <script src="{{asset('/js/room2.js')}}"></script>
 @endsection

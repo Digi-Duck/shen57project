@@ -1,5 +1,12 @@
 @extends('frontstage.template')
 
+@section('meta')
+<meta property="og:url" content="https://wangch15.github.io/shen57web/news">
+<meta property="og:image" content="https://wangch15.github.io/shen57web/img/index/banner.jpg">
+<meta property="og:description" content="最新消息、活動訊息、優惠專案">
+<meta property="og:title" content="森五七行館 / 最新消息">
+@endsection
+
 @section('title')
     森五七行館 - 訊 News
 @endsection
