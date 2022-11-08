@@ -97,9 +97,10 @@
                   <div class="r-info-link-box">
                      <div class="r-info-top-content">
                         <span>平日 12000 / 棟 ，</span>
-                        <span>假日、春吶 16000 / 棟</span>
+                        <span>假日 14000 / 棟 ，</span>
+                        <span>春節 16000 / 棟</span>
                      </div>
-                     <a href="/booking" class="r-info-map-link"><span></span></a>
+                     {{-- <a href="/booking" class="r-info-map-link"><span></span></a> --}}
                   </div>
                </div>
                <div class="r-info-top-box">
@@ -117,13 +118,13 @@
                <div class="r-info-top-box">
                   <div class="r-info-top-title">床&emsp;&emsp;型</div>
                   <div class="r-info-top-content">
-                     <span>2 張雙人床，可入住 4 人，</span>
-                     <span>可加 2 人，最多可入住 6 人</span>
+                    <p>一二樓各 1 間雙人床房間，</p>
+                    <p>一棟可入住 4 人 ， 可加 4 人，最多可入住 8 人</p>
                   </div>
                </div>
                <div class="r-info-top-box">
                   <div class="r-info-top-title">衛&emsp;&emsp;浴</div>
-                  <div class="r-info-top-content">衛浴 2 間</div>
+                  <div class="r-info-top-content">衛浴 2 間、洗手間 1 間</div>
                </div>
                <div class="r-info-top-box">
                   <div class="r-info-top-title">餐&emsp;&emsp;點</div>
