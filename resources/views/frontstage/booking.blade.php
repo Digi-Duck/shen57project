@@ -51,7 +51,7 @@
                                                     shen57hostel
                                                 </span>
                                                 <div>
-                                                    <button class="lineBtn" onclick="openwindow()"><img src="{{asset('/img/booking/line-white.svg')}}"
+                                                    <button class="community-line qr-open" onclick="openwindow()"><img src="{{asset('/img/booking/line-white.svg')}}"
                                                             alt="屏東-恆春民宿-森五七行館-line"></button>
                                                 </div>
                                             </div>
@@ -256,6 +256,4 @@
      }(document, 'script', 'facebook-jssdk'));
    </script>
 
-   <script src="./js/hambtn.js"></script>
-   <script src="./js/line.js"></script>
 @endsection
