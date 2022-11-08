@@ -119,7 +119,7 @@
                   <div class="r-info-top-title">床&emsp;&emsp;型</div>
                   <div class="r-info-top-content">
                     <p>一二樓各 1 間雙人床房間，</p>
-                    <p>一棟可入住 4 人 ， 可加 4 人，最多可入住 8 人</p>
+                    <p>一棟可入住 4 人 ， 可加 2 人，最多可入住 6 人</p>
                   </div>
                </div>
                <div class="r-info-top-box">
