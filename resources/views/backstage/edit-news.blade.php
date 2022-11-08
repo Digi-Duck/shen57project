@@ -51,10 +51,9 @@
                                 height: 300,
                                 toolbar: [
                                     // [groupName, [list of button]]
-                                    ['style', ['bold', 'italic', 'underline', 'clear']],
-                                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                                    ['style', ['bold', 'underline','strikethrough']],
                                     ['para', ['ul', 'ol']],
-                                    ['height', ['height']]
+                                    ['clear',['clear']]
                                 ]
                             });
                         });

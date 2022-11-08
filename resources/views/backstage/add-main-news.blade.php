@@ -44,10 +44,9 @@
                                 inheritPlaceholder: true,
                                 toolbar: [
                                     // [groupName, [list of button]]
-                                    ['style', ['bold', 'italic', 'underline', 'clear']],
-                                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                                    ['style', ['bold', 'underline','strikethrough']],
                                     ['para', ['ul', 'ol']],
-                                    ['height', ['height']]
+                                    ['clear',['clear']]
                                 ]
                             });
                             $('#summernote').summernote('code', '');
@@ -64,10 +63,9 @@
                                 inheritPlaceholder: true,
                                 toolbar: [
                                     // [groupName, [list of button]]
-                                    ['style', ['bold', 'italic', 'underline', 'clear']],
-                                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                                    ['style', ['bold', 'underline','strikethrough']],
                                     ['para', ['ul', 'ol']],
-                                    ['height', ['height']]
+                                    ['clear',['clear']]
                                 ]
                             });
                             $('#summernote2').summernote('code', '');
