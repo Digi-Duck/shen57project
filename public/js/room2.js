@@ -39,7 +39,7 @@ window.addEventListener('load', function () {
         },
 
         breakpoints: {
-            768: {
+            1025: {
                 slidesPerView: 2,
                 spaceBetween: 45,
             }
@@ -50,7 +50,7 @@ window.addEventListener('load', function () {
     //網頁寬度小於768以下的時候不顯示slide文字說明
 
     const slideSpanLoad = document.querySelectorAll('.swiper-slide>span')
-    if(ww < 769){
+    if(ww < 1025){
         slideSpanLoad.forEach(e => {
             e.classList.add('noShow')
         })
@@ -78,7 +78,7 @@ window.addEventListener('load', function () {
 window.onresize = function () {
     let ww = window.innerWidth
     const slideSpanLoad = document.querySelectorAll('.swiper-slide>span')
-    if (ww < 769) {
+    if (ww < 1025) {
         slideSpanLoad.forEach(e => {
             e.classList.add('noShow')
         })

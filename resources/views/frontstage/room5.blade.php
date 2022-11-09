@@ -29,43 +29,43 @@
             <div class="swiper-wrapper">
                <div class="swiper-slide">
                   <span>#1 _ 時尚館 _ 1F 大廳</span>
-                  <img src="{{asset('/img/rooms/room5/room5-1-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-1F大廳">
+                  <img srcset="/img/rooms/room5/room5-1-pc@1x.jpg 1x,/img/rooms/room5/room5-1-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-1-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-1F大廳">
                </div>
                <div class="swiper-slide">
                   <span>#2 _ 時尚館 _ 1F 大廳</span>
-                  <img src="{{asset('/img/rooms/room5/room5-2-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-1F大廳">
+                  <img srcset="/img/rooms/room5/room5-2-pc@1x.jpg 1x,/img/rooms/room5/room5-2-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-2-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-1F大廳">
                </div>
                <div class="swiper-slide">
                   <span>#3 _ 時尚館 _ 1F 大廳</span>
-                  <img src="{{asset('/img/rooms/room5/room5-3-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-1F大廳">
+                  <img srcset="/img/rooms/room5/room5-3-pc@1x.jpg 1x,/img/rooms/room5/room5-3-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-3-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-1F大廳">
                </div>
                <div class="swiper-slide">
                   <span>#4 _ 時尚館 _ 1F 雙人房</span>
-                  <img src="{{asset('/img/rooms/room5/room5-4-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-1F雙人房">
+                  <img srcset="/img/rooms/room5/room5-4-pc@1x.jpg 1x,/img/rooms/room5/room5-4-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-4-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-1F雙人房">
                </div>
                <div class="swiper-slide">
                   <span>#5 _ 時尚館 _ 2F 雙人房</span>
-                  <img src="{{asset('/img/rooms/room5/room5-5-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-2F 雙人房">
+                  <img srcset="/img/rooms/room5/room5-5-pc@1x.jpg 1x,/img/rooms/room5/room5-5-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-5-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-2F 雙人房">
                </div>
                <div class="swiper-slide">
                   <span>#6 _ 時尚館 _ 2F 大廳</span>
-                  <img src="{{asset('/img/rooms/room5/room5-6-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-2F 大廳">
+                  <img srcset="/img/rooms/room5/room5-6-pc@1x.jpg 1x,/img/rooms/room5/room5-6-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-6-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-2F 大廳">
                </div>
                <div class="swiper-slide">
                   <span>#7 _ 時尚館 _ 2F 大廳</span>
-                  <img src="{{asset('/img/rooms/room5/room5-7-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-2F 大廳">
+                  <img srcset="/img/rooms/room5/room5-7-pc@1x.jpg 1x,/img/rooms/room5/room5-7-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-7-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-2F 大廳">
                </div>
                <div class="swiper-slide">
                   <span>#8 _ 時尚館 _ 浴室</span>
-                  <img src="{{asset('/img/rooms/room5/room5-8-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-浴室">
+                  <img srcset="/img/rooms/room5/room5-8-pc@1x.jpg 1x,/img/rooms/room5/room5-8-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-8-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五時尚館-浴室">
                </div>
                <div class="swiper-slide">
                   <span>#9 _ 中式早點</span>
-                  <img src="{{asset('/img/rooms/room5/room5-9-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五七行館-中式早點">
+                  <img srcset="/img/rooms/room5/room5-9-pc@1x.jpg 1x,/img/rooms/room5/room5-9-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-9-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五七行館-中式早點">
                </div>
                <div class="swiper-slide">
                   <span>#10 _ 西式早點</span>
-                  <img src="{{asset('/img/rooms/room5/room5-10-pc@2x.jpg')}}" alt="屏東-恆春民宿-森五七行館-西式早點">
+                  <img srcset="/img/rooms/room5/room5-10-pc@1x.jpg 1x,/img/rooms/room5/room5-10-phone.jpg 2x" src="{{asset('/img/rooms/room5/room5-10-pc@1x.jpg')}}" alt="屏東-恆春民宿-森五七行館-西式早點">
                </div>
             </div>
          </div>
