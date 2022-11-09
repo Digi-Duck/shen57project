@@ -47,7 +47,7 @@ window.addEventListener('load', function () {
 
     });
 
-    //網頁寬度小於768以下的時候不顯示slide文字說明
+    //網頁寬度小於1024以下的時候不顯示slide文字說明
 
     const slideSpanLoad = document.querySelectorAll('.swiper-slide>span')
     if(ww < 1025){
